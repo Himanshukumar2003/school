@@ -855,7 +855,7 @@ h6 {
     color: #fff;
 
 
-
+    height: 100%;
     text-align: left;
     background-color: var(--e-global-color-accent);
     padding: 25px 25px 20px 25px;
@@ -1134,13 +1134,19 @@ small {
     margin-bottom: 20px;
 }
 
-.footer .social-icons i {
+.footer .social-icons a {
+    display: flex;
     color: #ffffff;
     background-color: var(--e-global-color-accent);
-    padding: 10px;
+    /* padding: 10px; */
     margin-right: 8px;
     border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .footer .footer-links h5 {
@@ -1397,6 +1403,7 @@ small {
 
 .news-card .btn {
     border-radius: 10px 0 10px 0px !important;
+    width: 100%;
 }
 
 

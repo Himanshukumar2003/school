@@ -1,24 +1,78 @@
-// Function to enable hover dropdowns on desktop only
 document.addEventListener("DOMContentLoaded", function () {
-    if (window.innerWidth >= 992) { // Adjust based on the Bootstrap breakpoint (lg: 992px)
-        // Select all dropdowns
-        const dropdowns = document.querySelectorAll('.navbar .dropdown');
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
 
-        dropdowns.forEach(dropdown => {
-            // Show dropdown on hover
-            dropdown.addEventListener('mouseover', function () {
-                const dropdownMenu = this.querySelector('.dropdown-menu');
-                dropdownMenu.classList.add('show');
-            });
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', function (event) {
+            if (window.innerWidth < 992) {  // MD breakpoint for Bootstrap
+                event.preventDefault();
+                const dropdownMenu = this.nextElementSibling;
+                dropdownMenu.classList.toggle('show');
+            }
+        });
+    });
+});
 
-            // Hide dropdown when not hovered
-            dropdown.addEventListener('mouseleave', function () {
-                const dropdownMenu = this.querySelector('.dropdown-menu');
-                dropdownMenu.classList.remove('show');
-            });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+    const currentPath = window.location.pathname;
+
+    navLinks.forEach(link => {
+        console.log("Checking link:", link.getAttribute("href")); // Debugging line
+
+        if (currentPath.includes(link.getAttribute("href"))) {
+            console.log("Active link found:", link); // Debugging line
+            link.classList.add("active-link");
+        }
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".card");
+
+    function revealCards() {
+        const windowHeight = window.innerHeight;
+        console.log(windowHeight)
+        cards.forEach(card => {
+            const cardTop = card.getBoundingClientRect().top;
+            if (cardTop < windowHeight - 100) {
+                card.classList.add("show");
+            }
         });
     }
+
+    window.addEventListener("scroll", revealCards);
+    revealCards(); // Trigger on load in case some cards are already in view
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const images = document.querySelectorAll('.scale-image');
+    console.log(images)
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+                const img = entry.target;
+                const delay = img.getAttribute('data-delay');
+
+                setTimeout(() => {
+                    img.style.transform = 'scale(1)';
+                    img.style.opacity = '1';
+                    img.classList.add('animated'); // Mark as animated to prevent re-triggering
+                }, delay);
+            }
+        });
+    }, { threshold: 0.5 }); // Trigger when 50% of the image is visible
+
+    images.forEach(img => observer.observe(img));
+});
+
+
+
+
+
+
 
 
 function toggleNavbar() {
@@ -52,85 +106,7 @@ $(document).ready(function () {
 
 
 
-document.getElementById("appointmentForm").addEventListener("submit", function (event) {
-    // Get form elements
-    const name = document.getElementById("name");
-    const email = document.getElementById("email");
-    const services = document.getElementById("services");
-    const date = document.getElementById("date");
 
-    let isFormValid = true;
-
-    // Validate name
-    if (name.value.trim() === "") {
-        name.classList.add("is-invalid");
-        isFormValid = false;
-    } else {
-        name.classList.remove("is-invalid");
-    }
-
-    // Validate email
-    if (email.value.trim() === "") {
-        email.classList.add("is-invalid");
-        isFormValid = false;
-    } else if (!validateEmail(email.value)) {
-        email.classList.add("is-invalid");
-        email.nextElementSibling.textContent = "Please enter a valid email address.";
-        isFormValid = false;
-    } else {
-        email.classList.remove("is-invalid");
-    }
-
-    // Validate services
-    if (services.value === "") {
-        services.classList.add("is-invalid");
-        isFormValid = false;
-    } else {
-        services.classList.remove("is-invalid");
-    }
-
-    // Validate date
-    if (date.value === "") {
-        date.classList.add("is-invalid");
-        isFormValid = false;
-    } else {
-        date.classList.remove("is-invalid");
-    }
-
-    // If form is invalid, prevent submission
-    if (!isFormValid) {
-        event.preventDefault();
-    }
-});
-
-// Email validation function
-function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-}
-
-
-
-
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const cards = document.querySelectorAll(".card");
-
-    function revealCards() {
-        const windowHeight = window.innerHeight;
-        cards.forEach(card => {
-            const cardTop = card.getBoundingClientRect().top;
-            if (cardTop < windowHeight - 100) { // Adjust trigger point as needed
-                card.classList.add("show");
-            }
-        });
-    }
-
-    window.addEventListener("scroll", revealCards);
-    revealCards(); // Trigger on load in case some cards are already in view
-});
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -177,24 +153,32 @@ $(document).ready(function () {
 });
 
 
-
-document.addEventListener('DOMContentLoaded', function () {
-    const images = document.querySelectorAll('.scale-image');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
-                const img = entry.target;
-                const delay = img.getAttribute('data-delay');
-
-                setTimeout(() => {
-                    img.style.transform = 'scale(1)';
-                    img.style.opacity = '1';
-                    img.classList.add('animated'); // Mark as animated to prevent re-triggering
-                }, delay);
+$(document).ready(function () {
+    $(".news-crouser").owlCarousel({
+        items: 3,
+        margin: 10,
+        loop: true,
+        nav: false,
+        dots: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
             }
-        });
-    }, { threshold: 0.5 }); // Trigger when 50% of the image is visible
-
-    images.forEach(img => observer.observe(img));
+        }
+    });
 });
+
+
+
+// Email validation function
+
+
+
+
+

@@ -79,3 +79,17 @@ document.getElementById('nextBtn').addEventListener('click', () => {
 
 // Initialize the gallery on page load
 document.addEventListener('DOMContentLoaded', renderGallery);
+
+
+
+
+
+
+
+
+
+
+
+
+
+

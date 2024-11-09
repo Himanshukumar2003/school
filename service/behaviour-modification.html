@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behaviour Modification</title>
+
+    <link rel="icon" type="/image/png" href="img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+
+<body>
+    <div class="bg-one main-header">
+
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/img/logo.png" alt="Logo" class="navbar-logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" onclick="toggleNavbar()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="menu-item">
+                    <div class=" mene-header  ">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <img src="/img/logo.png" class=" navbar-logo">
+                            <i class="bi bi-x" onclick="toggleNavbar()"></i>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="serviceDropdown" role="button"
+                                aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                <li><a class="dropdown-item" href="/about.html">About Us</a></li>
+                                <li><a class="dropdown-item" href="/advisory-board.html">Advisory Board</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button"
+                                aria-expanded="false">
+                                Service
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                <li><a class="dropdown-item" href="/service/behaviour-modification.html">Behaviour
+                                        Modification</a></li>
+                                <li><a class="dropdown-item" href="/service/counseling.html">Counseling Assessment</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/service/early-intervention.html">Early
+                                        Intervention</a></li>
+                                <li><a class="dropdown-item" href="/service/occupational-therapy.html">Occupational
+                                        Therapy</a></li>
+                                <li><a class="dropdown-item" href="/service/special-education.html">Special
+                                        Education</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/service/speech-therapy.html">Speech Therapy</a></li>
+                                <li><a class="dropdown-item" href="/service/vocational-courses.html">Vocational
+                                        Courses</a></li>
+                                <li><a class="dropdown-item" href="/index.html">For All School Students</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/news.html">News & Events</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/internship.html">Internship</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/training-programs.html">Traing Program</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <a href="/contact.html" class="btn btn-custom ms-3 d-none d-lg-inline-block">Contact</a>
+            </div>
+        </nav>
+
+        <div class="pages-section">
+            <div class="container">
+                <div class="pages-link text-center">
+                    <h2 class="mb-4">Behaviour Modification</h2>
+                    <div class="d-flex align-items-center justify-content-center gap-4">
+                        <a href="/index.html">Home</a>
+                        <i class="bi bi-arrow-right erro"></i>
+                        <a href="service/behaviour-modification.html">Behaviour Modification</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="mainPadding">
+
+        <div class="container ">
+
+
+            <ul class="nav nav-tabs" id="therapyTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview"
+                        type="button" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="why-tab" data-bs-toggle="tab" data-bs-target="#why" type="button"
+                        role="tab" aria-controls="why" aria-selected="false">Why</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Types-tab" data-bs-toggle="tab" data-bs-target="#Types" type="button"
+                        role="tab" aria-controls="importance" aria-selected="false">Types</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Benefits-tab" data-bs-toggle="tab" data-bs-target="#Benefits"
+                        type="button" role="tab" aria-controls="assessment" aria-selected="false">Benefits</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Assessment-tab" data-bs-toggle="tab" data-bs-target="#Assessment"
+                        type="button" role="tab" aria-controls="Assessment" aria-selected="false">Assessment</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Procedure
+                    -tab" data-bs-toggle="tab" data-bs-target="#Procedure
+                    " type="button" role="tab" aria-controls="Procedure
+                        " aria-selected="false">Procedure
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content border p-4 mt-3" id="therapyTabContent">
+                <!-- Overview Content -->
+                <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                    <h2>Overview</h2>
+                    <p>Adhyayan offers behavioral counseling for parents of kids with special needs. Meet with a
+                        counselor to learn techniques to reduce stressors that are unique to your situation.</p>
+
+                    <div class="list-item mb-4">
+                        <p>What can you gain from counseling?
+                        <p>
+                        <ul>
+                            <li>Identify triggers for stress</li>
+                            <li>Develop concrete goals for managing stress</li>
+                            <li>Replace old habits with new skills</li>
+                            <li>Troubleshoot barriers to stress reduction</li>
+
+                            <li>Learn to seek out joy</li>
+                            <li>Learn to navigate relationships</li>
+                        </ul>
+                    </div>
+                    <p>We are in-network with several insurance plans and have private pay options available.</p>
+
+                    <p>Behavioral Therapy is an umbrella term for different types of treatment used to identify and
+                        rectify potentially self-destructive or unhealthy behaviors. It is rooted in the principles of
+                        behaviorism ​​— a school of thought focused on the idea that we learn our behavior from our
+                        environment. Hence, unhealthy behavior can be changed through repeated practice.</p>
+                    <p>Unlike other forms of therapy, Behavioral Therapy is highly action-based. The behavior itself is
+                        the problem, and the goal is to reinforce desirable behaviors and eliminate unwanted ones.</p>
+                </div>
+
+                <!-- Why Content -->
+                <div class="tab-pane fade" id="why" role="tabpanel" aria-labelledby="why-tab">
+                    <h3>Why Behaviour Modification at Adhyayan?</h3>
+                    <p>At Adhyayan, we offer different forms of Behavioral Therapy to treat a wide range of disorders.
+                        These include Cognitive Behavioral Therapy, Cognitive Behavioral Play Therapy, System
+                        Desensitization, Aversion Therapy, Applied Behaviour Therapy, and Play Therapy.
+                    <p>
+                    <p>We provide the best Cognitive Behavioral Therapy in Bangalore for adults, children, and
+                        preschoolers. Our cognitive behavioral therapy services help to foster the development of
+                        healthy behaviours in individuals. Our highly specialized Cognitive Behavioral Therapy doctors
+                        also provide customized cognitive behavioral therapy for depression and anxiety disorder. We
+                        also help suicidal patients overcome their tendencies.</p>
+                </div>
+
+                <!-- Importance Content -->
+                <div class="tab-pane fade" id="Types" role="tabpanel" aria-labelledby="Types-tab">
+
+                    <h2 class="title">Types of Behavioral Therapy</h2>
+                    <p class="description">
+                        There are different types of Behavioral Therapy approaches, that help address learned
+                        responses
+                        and conditioning, including:
+                    </p>
+
+                    <div class="therapy">
+                        <h3>Cognitive Behavioral Therapy</h3>
+                        <p>
+                            Cognitive Behavioral Therapy is the most popular form of Behavioral Therapy. It relies
+                            on
+                            behavioral techniques, but adds a cognitive element, focusing on the problematic
+                            thoughts
+                            behind behaviors. This type of therapy concentrates on an individual’s existing problems
+                            and
+                            how to solve them. The long-term goal, being to change their thinking and alter their
+                            behavioral patterns, to healthier ones.
+                        </p>
+                    </div>
+
+                    <div class="therapy">
+                        <h3>Cognitive Behavioral Play Therapy</h3>
+                        <p>
+                            Cognitive Behavioral Play Therapy utilizes play to assess, prevent, or treat
+                            psychosocial
+                            challenges in children. Therapists gain insights into children’s behavior by watching
+                            them
+                            play. They may be asked to draw a picture or use toys to create scenarios in a sandbox.
+                            The
+                            therapist also teaches parents various methods to improve communication with children,
+                            through play.
+                        </p>
+                    </div>
+
+                    <div class="therapy">
+                        <h3>Applied Behavior Analysis</h3>
+                        <p>
+                            Applied Behavior Analysis focuses on improving specific behaviors, such as social
+                            skills,
+                            communication, reading, and academics, as well as adaptive learning skills. It is
+                            effective
+                            for children and adults with psychological disorders, and is commonly practiced as a
+                            means
+                            of therapeutic intervention for Autism.
+                        </p>
+                    </div>
+
+                    <div class="therapy">
+                        <h3>Dialectical Behavioral Therapy</h3>
+                        <p>
+                            Dialectical behavioral therapy is a form of Cognitive Behavioral Therapy that tries to
+                            identify and change negative thinking patterns, while pushing for positive behavioral
+                            changes. It utilizes both behavioral and cognitive techniques to help people learn to
+                            manage
+                            their emotions, cope with distress, and improve interpersonal relationships.
+                        </p>
+                    </div>
+
+                    <div class="therapy">
+                        <h3>Exposure Therapy</h3>
+                        <p>
+                            Exposure Therapy is useful for treating specific phobias and other forms of anxiety. It
+                            utilizes behavioral techniques to help reduce feelings of anxiety, distress, or fear
+                            that a
+                            person may have, due to a disorder or previous trauma. It exposes individuals to a
+                            situation
+                            or stimulus that triggers feelings of fear or panic for them. Over time, this controlled
+                            exposure helps the individual to overcome these fears within a safe space.
+                        </p>
+                    </div>
+
+                    <div class="therapy">
+                        <h3>Rational Emotive Behavior Therapy</h3>
+                        <p>
+                            Rational Emotive Behavior Therapy is an action-oriented approach that focuses on dealing
+                            with irrational beliefs. It helps individuals identify negative or destructive thoughts
+                            and
+                            feelings, and manage their emotions, thoughts, and behaviors in a healthier, more
+                            realistic
+                            way.
+                        </p>
+                    </div>
+
+                    <div class="therapy">
+                        <h3>Social Learning Theory</h3>
+                        <p>
+                            Social Learning Theory proposes that new behavior patterns can be acquired by observing
+                            and
+                            imitating others. Observing others being rewarded or punished for their actions, can
+                            directly lead to learning and behavioral change.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="tab-pane fade" id="Benefits" role="tabpanel" aria-labelledby="Benefits-tab">
+                    <h2>
+                        Benefits/ Importance of Behavioral Therapy</h2>
+                    <div class="list-item mb-4">
+                        <p>Behavioral Therapy has been effective in treating a number of different conditions such as
+                            anger issues, anxiety, bulimia, depression, stress, substance abuse and relapse prevention,
+                            and several other conditions. It also helps individuals:
+                        <p>
+                        <ul>
+                            <li>Recover from mental disorders by providing a support network</li>
+                            <li>Build self-esteem by focusing on problems and working toward their solution</li>
+                            <li>Turn negative thoughts into positive, more realistic ones</li>
+                            <li>Control anger and recognize the reasons behind it</li>
+                            <li>Communicate feelings with other individuals</li>
+                            <li>Improve coping skills for stressful situations</li>
+                            <li>Prevent relapses with the help of necessary tools</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="Assessment" role="tabpanel" aria-labelledby="Assessment">
+                    <h2>Assessment</h2>
+                    <p>Behavioral therapy techniques use reinforcement, punishment, shaping, modeling, and related
+                        techniques to alter behavior, producing fast and effective results. It is important to know
+                        about the basic principles of Behavioral Therapy to understand how it works. The techniques used
+                        in this type of treatment are based on the either of the following two theories:</p>
+
+                    <div class="therapy">
+                        <h3>Classical Conditioning</h3>
+                        <p>
+                            In classical conditioning, an automatic conditioned response is paired with a specific
+                            stimulus that creates a behavior. During the process, previously neutral stimuli are paired
+                            with a stimulus that naturally and automatically evokes a response. After repeated pairings,
+                            an association is formed and the previously neutral stimulus will come to evoke the altered
+                            response on its own.
+
+
+                        </p>
+                    </div>
+                    <div class="therapy">
+                        <h3>Operant Conditioning</h3>
+                        <p>
+                            Operant conditioning utilizes reinforcement and punishment to either increase or decrease
+                            the frequency of a specific behavior. It is based on the idea that behaviors followed by
+                            desirable consequences are more likely to occur again in the future, while those followed by
+                            negative consequences are less likely to occur.
+                        </p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="Procedure" role="tabpanel" aria-labelledby="Procedure">
+                    <h2>Procedure</h2>
+                    <p>Before introducing an intervention, several things must take place. First, it must be established
+                        that there is,indeed, a behavior problem. Factors which may influence or cause a student’s
+                        behavior, such as a medical condition, language difficulties, or cultural differences, must be
+                        investigated. Additionally, input from other staffand from parents is necessary in establishing
+                        which behavior is problematic. Second, a functional analysis needs to be completed in order to
+                        establish which antecedents and consequences are supporting the behavior (or which antecedents
+                        and consequences are needed in the case of promoting behavior).</p>
+                    <p>Third, it must be determined whether the target behavior is of priority to justify intervention.
+                        For example, while pencil tapping may be an annoying behavior, it probably does not warrant
+                        implementation of a token economy. In deciding whether a behavior necessitates intervention, you
+                        will need to look at its frequency (how often it occurs as compared to peers), the intensity at
+                        which the behavior is exhibited, and the rate at which the student is able to learn new
+                        behaviors.After these steps have been taken and it is agreed that a problem which warrants
+                        intervention does exist,behavior modification can be implemented.</p>
+                    <p>What are examples of behavior modification interventions?</p>
+                    <p>Examples of behavior modification which can be used to increase behavior are: praise and
+                        approval, modeling, positive programming, shaping, token economy, self-monitoring, and shaping.
+                        Methods which can be used to decrease behavior are: extinction, reinforcing incompatible
+                        behavior, relaxation, self-monitoring, and shaping.</p>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="mainPadding bg-four bg">
+        <div class="container">
+            <div class="text-center pb-3">
+
+                <h6 class="text-warning">Faq</h6>
+                <div class="service-heading">
+                    <h2 class="heading">Frequently Asked Questions?</h2>
+
+                </div>
+            </div>
+            <div class="accordion-section">
+                <div class="accordion" id="businessPlanFAQ">
+                    <!-- Question 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question1">
+                                What is an example of Cognitive Behavioral Therapy?
+                            </button>
+                        </h2>
+                        <div id="question1" class="accordion-collapse collapse show" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                <p>Addressing an individual’s underlying patterns of thinking, targeting problems, and
+                                    designing coping strategies is an example of Cognitive Behavioral Therapy.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question2">
+                                What happens during Cognitive Behavioral Therapy?
+                            </button>
+                        </h2>
+                        <div id="question2" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                <p>In Cognitive Behavioural Therapy, the therapist helps you to change unhealthy ways of
+                                    thinking, feeling, and behaving using practical self-help strategies. These
+                                    strategies
+                                    focus on immediately improving your quality of life.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question3">
+                                What are the Cognitive Behavioral Therapy techniques?
+                            </button>
+                        </h2>
+                        <div id="question3" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                <p>Some of the Cognitive Behavioral Therapy techniques, include:</p>
+                                <ul>
+                                    <li>Cognitive restructuring or reframing</li>
+                                    <li>Exposure therapy</li>
+                                    <li>Journaling and thought records</li>
+                                    <li>Guided discovery</li>
+                                    <li>Activity scheduling and behavior activation</li>
+                                    <li>Relaxation and stress reduction techniques</li>
+                                    <li>Behavioral experimenting</li>
+                                    <li>Role playing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question4">
+                                What are the three components of Cognitive Behavioral Therapy?
+                            </button>
+                        </h2>
+                        <div id="question4" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                <p>The three components of Cognitive Behavioral Therapy are Cognitive Therapy,
+                                    Behavioural
+                                    Therapy, and the art of practising mindfulness.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question5">
+                                Why is Cognitive Behavioral Therapy good for anxiety?
+                            </button>
+                        </h2>
+                        <div id="question5" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                <p>Cognitive Behavioral Therapy helps to counter negative thought cycles, change
+                                    negative
+                                    patterns of thinking, and improve coping mechanisms.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question6">
+                                What are the goals of Cognitive Behavioral Therapy?
+                            </button>
+                        </h2>
+                        <div id="question6" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                <p>Cognitive Behavioral Therapy helps to address underlying dysfunctional thoughts by
+                                    improving behavior and functioning.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question7">
+                                How much does a Cognitive Behavioral Therapy session cost?
+                            </button>
+                        </h2>
+                        <div id="question7" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                <p>An average 60-minute session at the best cognitive behavioral therapy clinic costs
+                                    somewhere between INR 2000 to INR 3000 rupees.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question8">
+                                What is the success rate of Cognitive Behavioral Therapy?
+                            </button>
+                        </h2>
+                        <div id="question8" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                <p>Content for question 4 goes here...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question9">
+                                How do I prepare for Cognitive Behavioral Therapy?
+                            </button>
+                        </h2>
+                        <div id="question9" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                Here are a few tips for preparing for Cognitive Behavioral Therapy:
+                                <ul>
+                                    <li>Get a referral from a doctor to see an Occupational Therapist or a psychologist
+                                    </li>
+                                    <li>Find the best cognitive behavioral therapist that offers a customized Cognitive
+                                        Behavioral Therapy treatment plan</li>
+                                    <li>Be open about your problems and concerns</li>
+                                    <li>Take down notes whenever necessary</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question10">
+                                How long does a session of Cognitive Behavioral Therapy last?
+                            </button>
+                        </h2>
+                        <div id="question10" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                <p>An average Cognitive Behavioral Therapy session lasts somewhere between 45 to 60
+                                    minutes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question11">
+                                Is Cognitive Behavioral Therapy effective?
+                            </button>
+                        </h2>
+                        <div id="question11" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                <p>Yes, Cognitive Behavioral Therapy is absolutely effective.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question12">
+                                What are the limitations of Cognitive Behavioral Therapy?
+                            </button>
+                        </h2>
+                        <div id="question12" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                <p>Cognitive Behavioral Therapy requires commitment and willingness to accept change. It
+                                    also needs the patient to have an insight into the problem along with good
+                                    cognition.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question13">
+                                What is the difference between Cognitive Behavioral Therapy and other forms of
+                                treatment?
+                            </button>
+                        </h2>
+                        <div id="question13" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                <p>Cognitive Behavioral Therapy is a form of psychotherapy that addresses underlying
+                                    thought
+                                    processes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer-bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-logo footer-List">
+                    <h3>Kinderly</h3>
+                    <p class="footer-description">
+                        It has been more than two decades that we have been working relentlessly for our CHILDREN WITH
+                        DYSLEXIA and OtherDisabilities with a well supported expert team consisting of special
+                        educators,Occupational therapists, Speech therapists, Behavior therapists,Counselling
+                        Psychologists and Career Counsellors. </p>
+                    <div class="social-icons d-flex gap-2">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-2 footer-links footer-List">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#"> home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">gallery</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">News & Events</a></li>
+                        <li><a href="#">contact</a></li>
+
+
+
+                    </ul>
+                </div>
+
+                <!-- Useful Links Column -->
+                <div class="col-md-2 footer-links footer-List">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="#">Special Education</a></li>
+                        <li><a href="#">Behaviour Modification</a></li>
+                        <li><a href="#">Counseling</a></li>
+                        <li><a href="#">Occupational Therapy</a></li>
+                        <li><a href="#">Speech Therapy</a></li>
+                        <li><a href="#">Vocational Courses</a></li>
+                        <li><a href="#">Early Intervention</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="col-md-4 footer-links footer-List">
+                    <h5>Contact Us</h5>
+                    <div class="contact-info">
+                        <!-- Phone -->
+                        <div class="info-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <div>
+                                <h6>Phone</h6>
+                                <a href="tel:+919810052388">+91 98100 52388</a>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!-- Email -->
+                        <div class="info-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            <div>
+                                <h6>Email</h6>
+                                <a href="mailto:team.adhyayan123@gmail.com">team.adhyayan123@gmail.com</a>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!-- Address -->
+                        <div class="info-item">
+                            <i class="bi bi-geo-alt-fill "></i>
+                            <div>
+                                <h6>Address</h6>
+                                <p>E-17, 2nd Floor, South Extension I, New Delhi, Delhi 110017</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom ">
+                <p>Child Therapy Template Kit by Jegtheme</p>
+                <p>Copyright © 2022. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+
+
+</body>
+
+</html>

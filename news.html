@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Media Coverage</title>
+
+    <link rel="icon" type="/image/png" href="img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+
+<body>
+    <div class="bg-one main-header">
+
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/img/logo.png" alt="Logo" class="navbar-logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" onclick="toggleNavbar()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="menu-item">
+                    <div class=" mene-header  ">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <img src="/img/logo.png" class=" navbar-logo">
+                            <i class="bi bi-x" onclick="toggleNavbar()"></i>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="serviceDropdown" role="button"
+                                aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                <li><a class="dropdown-item" href="/about.html">About Us</a></li>
+                                <li><a class="dropdown-item" href="/advisory-board.html">Advisory Board</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button"
+                                aria-expanded="false">
+                                Service
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                <li><a class="dropdown-item" href="/service/behaviour-modification.html">Behaviour
+                                        Modification</a></li>
+                                <li><a class="dropdown-item" href="/service/counseling.html">Counseling Assessment</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/service/early-intervention.html">Early
+                                        Intervention</a></li>
+                                <li><a class="dropdown-item" href="/service/occupational-therapy.html">Occupational
+                                        Therapy</a></li>
+                                <li><a class="dropdown-item" href="/service/special-education.html">Special
+                                        Education</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/service/speech-therapy.html">Speech Therapy</a></li>
+                                <li><a class="dropdown-item" href="/service/vocational-courses.html">Vocational
+                                        Courses</a></li>
+                                <li><a class="dropdown-item" href="/index.html">For All School Students</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/news.html">News & Events</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/internship.html">Internship</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/training-programs.html">Traing Program</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <a href="/contact.html" class="btn btn-custom ms-3 d-none d-lg-inline-block">Contact</a>
+            </div>
+        </nav>
+
+        <div class="pages-section">
+            <div class="container">
+                <div class="pages-link text-center">
+                    <h2 class="mb-4">News & Media Coverage</h2>
+                    <div class="d-flex align-items-center justify-content-center gap-4">
+                        <a href="/index.html">Home</a>
+                        <i class="bi bi-arrow-right erro"></i>
+
+                        <a href="news.html">News & Media Coverage</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade imageModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="closeBtn">&times;</button>
+                    <img class="modalImage img-fluid" src="" alt="Gallery Image">
+                    <button class="prevBtn">&laquo;</button>
+                    <button class="nextBtn">&raquo;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="mainPadding">
+        <div class="container">
+            <div class="text-center heading-section">
+
+                <div class="service-heading">
+                    <h2 class="heading">
+                        Photos
+                    </h2>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="news-img"><img src="img/story-2.jpg" alt="gallery-1" class="clickable-img"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-img"><img src="img/media3.jpg" alt="gallery-2" class="clickable-img"></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="news-img"><img src="img/media4.jpg" alt="gallery-3" class="clickable-img"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mainPadding">
+        <div class="container">
+            <div class="text-center heading-section">
+
+                <div class="service-heading">
+                    <h2 class="heading">
+                        videos
+                    </h2>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class=""><iframe width="100%" height="315"
+                            src="https://www.youtube.com/embed/PVDKE9QVDtU?si=3SMA3nCer0b-0dX6"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="">
+                        <video class="news-vedio" height="315" controls poster>
+                            <source src="/img/vedio/vid1.mp4" type="video/mp4">
+
+                        </video>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class=""> <video class="news-vedio" height="315" controls poster>
+                            <source src="/img/vedio/vid2.mp4" type="video/mp4">
+                        </video></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mainPadding bg-four bg">
+        <div class="container">
+            <div class="text-center heading-section">
+                <h6>News</h6>
+                <div class="service-heading">
+                    <h2 class="heading">Media Coverage</h2>
+                </div>
+            </div>
+
+            <!-- Owl Carousel -->
+            <div class="owl-carousel owl-theme news-crouser">
+                <div class="item">
+                    <div class="news-card">
+                        <img src="img/news1.jpg" alt="news-img-1">
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="news-card">
+                        <img src="img/news2.jpg" alt="news-img-2">
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="news-card">
+                        <img src="img/news5.jpg" alt="news-img-3">
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="news-card">
+                        <img src="img/news4.jpg" alt="news-img-4">
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="news-card">
+                        <img src="img/news3.jpg" alt="news-img-5">
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-logo footer-List">
+                    <h3>Kinderly</h3>
+                    <p class="footer-description">
+                        It has been more than two decades that we have been working relentlessly for our CHILDREN WITH
+                        DYSLEXIA and OtherDisabilities with a well supported expert team consisting of special
+                        educators,Occupational therapists, Speech therapists, Behavior therapists,Counselling
+                        Psychologists and Career Counsellors. </p>
+                    <div class="social-icons d-flex gap-2">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-2 footer-links footer-List">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#"> home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">gallery</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">News & Events</a></li>
+                        <li><a href="#">contact</a></li>
+
+
+
+                    </ul>
+                </div>
+
+                <!-- Useful Links Column -->
+                <div class="col-md-2 footer-links footer-List">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="#">Special Education</a></li>
+                        <li><a href="#">Behaviour Modification</a></li>
+                        <li><a href="#">Counseling</a></li>
+                        <li><a href="#">Occupational Therapy</a></li>
+                        <li><a href="#">Speech Therapy</a></li>
+                        <li><a href="#">Vocational Courses</a></li>
+                        <li><a href="#">Early Intervention</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="col-md-4 footer-links footer-List">
+                    <h5>Contact Us</h5>
+                    <div class="contact-info">
+                        <!-- Phone -->
+                        <div class="info-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <div>
+                                <h6>Phone</h6>
+                                <a href="tel:+919810052388">+91 98100 52388</a>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!-- Email -->
+                        <div class="info-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            <div>
+                                <h6>Email</h6>
+                                <a href="mailto:team.adhyayan123@gmail.com">team.adhyayan123@gmail.com</a>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!-- Address -->
+                        <div class="info-item">
+                            <i class="bi bi-geo-alt-fill "></i>
+                            <div>
+                                <h6>Address</h6>
+                                <p>E-17, 2nd Floor, South Extension I, New Delhi, Delhi 110017</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom ">
+                <p>Child Therapy Template Kit by Jegtheme</p>
+                <p>Copyright © 2022. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+
+
+</body>
+
+</html>

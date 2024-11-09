@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <link rel="icon" type="/image/png" href="img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+
+<body>
+    <div class="bg-one main-header">
+
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/img/logo.png" alt="Logo" class="navbar-logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" onclick="toggleNavbar()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="menu-item">
+                    <div class=" mene-header  ">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <img src="/img/logo.png" class=" navbar-logo">
+                            <i class="bi bi-x" onclick="toggleNavbar()"></i>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="serviceDropdown" role="button"
+                                aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                <li><a class="dropdown-item" href="/about.html">About Us</a></li>
+                                <li><a class="dropdown-item" href="/advisory-board.html">Advisory Board</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button"
+                                aria-expanded="false">
+                                Service
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                <li><a class="dropdown-item" href="/service/behaviour-modification.html">Behaviour
+                                        Modification</a></li>
+                                <li><a class="dropdown-item" href="/service/counseling.html">Counseling Assessment</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/service/early-intervention.html">Early
+                                        Intervention</a></li>
+                                <li><a class="dropdown-item" href="/service/occupational-therapy.html">Occupational
+                                        Therapy</a></li>
+                                <li><a class="dropdown-item" href="/service/special-education.html">Special
+                                        Education</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/service/speech-therapy.html">Speech Therapy</a></li>
+                                <li><a class="dropdown-item" href="/service/vocational-courses.html">Vocational
+                                        Courses</a></li>
+                                <li><a class="dropdown-item" href="/index.html">For All School Students</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/news.html">News & Events</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/internship.html">Internship</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/training-programs.html">Traing Program</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <a href="/contact.html" class="btn btn-custom ms-3 d-none d-lg-inline-block">Contact</a>
+            </div>
+        </nav>
+
+        <div class="pages-section">
+            <div class="container">
+                <div class="pages-link text-center">
+                    <h2 class="mb-4">About Us</h2>
+                    <div class="d-flex align-items-center justify-content-center gap-4">
+                        <a href="/index.html">Home</a>
+                        <i class="bi bi-arrow-right erro"></i>
+
+                        <a href="/about.html">About</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="mainPadding">
+        <div class="text-center heading-section">
+            <h6 class=""> latest news
+            </h6>
+            <div class="service-heading">
+                <h2 class="heading">latest blog
+                </h2>
+
+            </div>
+        </div>
+        <div class="container ">
+            <div class="row g-5">
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <div class="position-relative">
+                            <img src="img/2.jpg" alt="Card image" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Are we ready for inclusive education?</h5>
+                            <p class="card-text">With the new Education Policy (NEP 2020) Indian education enters into
+                                the era of inclusive education where children with disabilities will not be denied
+                                school admission under any circumstances.</p>
+                            <a href="/blog-flile/inclusive-education.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <div class="position-relative">
+                            <img src="img/1.jpg" alt="Card image" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Addressing pandemic impact on children with special educational needs
+                                must be a priority in India</h5>
+                            <p class="card-text">With the pandemic lasting about two years and everyone adjusting to the
+                                “new normal”, many institutions experienced severe barriers and have been unable to
+                                provide the same quality of output and experience as in pre-pandemic times. </p>
+                            <a href="/blog-flile/adressing-pandemic-impact.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <div class="position-relative">
+                            <img src="img/9.jpg" alt="Card image" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Autism</h5>
+                            <p class="card-text">Autism or Autism Spectrum Disorders (ASD) or Autism Spectrum Condition
+                                (ASC) are a category of developmental disorders that are marked by deficits in
+                                communication and social interaction along with stereotyped or repetitive and rigid ways
+                                of functioning. </p>
+                            <a href="/blog-flile/autism.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card">
+                        <div class="position-relative">
+                            <img src="img/blog/10-way-occup.png" alt="10 Ways to Occupy" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">10 Ways to Occupational Therayy</h5>
+                            <p class="card-text">Occupational Therapy (OT) is a holistic approach to improving the daily
+                                functioning and quality of life for individuals of all ages. At Adhyayan Inclusive
+                                Learning Centre, located in the heart of Delhi</p>
+                            <a href="/blog-flile/10ways-occupational-therapy-can-enhance-daily-life.html"
+                                class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card">
+                        <div class="position-relative">
+                            <img src="img/blog/adhd.webp" alt="ADHD" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">ADHD Treatment in Delhi</h5>
+                            <p class="card-text">In a bustling city like Delhi, children diagnosed with Attention
+                                Deficit Hyperactivity Disorder (ADHD) often face unique challenges that can affect their
+                                academic performance, social interactions, and overall well-being. Recognizing the
+                                importance of early intervention and specialized care, Adhyayan Inclusive Learning
+                                Centre in South Delhi offers comprehensive ADHD treatment tailored specifically for
+                                children.</p>
+                            <a href="/blog-flile/adhd-treatment-in-delhi.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card">
+                        <div class="position-relative">
+                            <img src="img/blog/apa-therapist.webp" alt="APA Therapist" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Best ABA Therapist in Delhi</h5>
+                            <p class="card-text">Insights on APA-certified therapists and their approaches to treatment.
+                            </p>
+                            <a href="/blog-flile/best-apa-therapist-in-delhi.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card">
+                        <div class="position-relative">
+                            <img src="img/blog/autism-center.webp" alt="Autism Center" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">The Best Autism Center in Delhi</h5>
+                            <p class="card-text">In a bustling metropolis like Delhi, where diversity is celebrated,
+                                it's heartening to see institutions like Adhyayan Inclusive Learning Centre making a
+                                significant impact on the lives of individuals with autism. Recognized as the best
+                                autism center in Delhi, AILC Special School has carved a niche for itself by providing
+                                exceptional care, education, and support for children on the autism spectrum. </p>
+                            <a href="/blog-flile/best-autism-center-in-delhi.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card">
+                        <div class="position-relative">
+                            <img src="/img/blog/autusim-therapy.webp" alt="Autism Therapy" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">6 Autism Therapies Parents Can Provide in Their Own Home</h5>
+                            <p class="card-text">Living with autism can present unique challenges, especially when it
+                                comes to finding effective therapies and treatments. While professional intervention
+                                from places like the Adhyayan Inclusive Learning Centre and other top autism therapy
+                                centers in Delhi is crucial, parents also play a vital role in their child's
+                                development. </p>
+                            <a href="/blog-flile/6-autism-therapies-parents-can-provide-in-their-own-home.html"
+                                class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card">
+                        <div class="position-relative">
+                            <img src="img/blog/importance-of-occuptional-therapy.webp"
+                                alt="Importance of Occupational Therapy" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Understanding The Importance Of Occupational Therapy</h5>
+                            <p class="card-text">In today’s fast-paced world, where stress and anxiety are prevalent,
+                                the significance of occupational therapy (OT) cannot be overstated. Whether it's
+                                managing daily tasks, coping with disabilities, or enhancing overall well-being,
+                                occupational therapy plays a vital role in improving the quality of life for individuals
+                                of all ages. In this blog, we delve into the importance of occupational therapy,
+                                particularly in the context of the Adhyayan Inclusive Learning Centre, recognized as one
+                                of the best OT centers in Delhi and South Delhi.</p>
+                            <a href="/blog-flile/understanding-the-importance-of-occupational-therapy.html"
+                                class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card">
+                        <div class="position-relative">
+                            <img src="img/blog/occuptional.webp" alt="Occupational Therapy Basics" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">The Best Occupational Therapy Centre in Delhi
+                            </h5>
+                            <p class="card-text">In the bustling city of Delhi, where every corner tells a unique story,
+                                one particular institution stands out as a beacon of hope and transformation for
+                                individuals seeking holistic care and support – Adhyayan Inclusive Learning Centre.
+                                Renowned as the best occupational therapy centre in Delhi, AILC Special School is
+                                dedicated to empowering individuals of all ages with diverse abilities through its
+                                innovative and inclusive approach to occupational therapy. </p>
+                            <a href="/blog-flile/best-occupational-therapy-center-in-delhi.html" class="read-more">Read
+                                More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card">
+                        <div class="position-relative">
+                            <img src="img/blog/occuptional-therapy.webp" alt="Occupational Therapy Techniques"
+                                class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Occupational Therapy When Self Needs Care
+                            </h5>
+                            <p class="card-text">In today's fast-paced world, where stress and pressures abound, taking
+                                care of oneself often takes a back seat. Amidst the hustle and bustle of daily life,
+                                individuals frequently overlook their own well-being, prioritizing the demands of work,
+                                family, and other responsibilities. However, neglecting self-care can have profound
+                                consequences on both physical and mental health, leading to burnout, anxiety, and
+                                diminished quality of life.</p>
+                            <a href="/blog-flile/occupational-therapy-when-self-needs-care.html" class="read-more">Read
+                                More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card">
+                        <div class="position-relative">
+                            <img src="img/blog/pioner-work-with-understanding.webp" alt="Pioneer Work in Understanding"
+                                class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"> Pioneering Work in Understanding Lelities</h5>
+                            <p class="card-text">Mr. Rajeev Bhatt stands as a distinguished figure in the field of
+                                psychology and education, revered for his expertise in understanding learning
+                                disabilities. With over two decades of experience in mental health and education, his
+                                contributions have been instrumental in reshaping the understanding of various cognitive
+                                challenges.
+                            </p>
+                            <a href="/blog-flile/mr-rajeev-bhatt-pioneering-work-in-understanding-learning-disabilities.html"
+                                class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card">
+                        <div class="position-relative">
+                            <img src="img/blog/special-education.webp" alt="Special Education" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Best Special Education in Delhi</h5>
+                            <p class="card-text">In the bustling metropolis of Delhi, where every corner resonates with
+                                the pulse of education and advancement, finding the best special education center is
+                                akin to discovering a gem amidst a treasure trove. In this pursuit, Adhyayan Inclusive
+                                Learning Centre shines brightly as a beacon of hope, empowerment, and excellence. As we
+                                delve into the realm of special education in Delhi, let us unravel the unparalleled
+                                offerings of AILC Special School, cementing its position as the epitome of educational
+                                excellence.</p>
+                            <a href="/blog-flile/best-special-education-in-delhi.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 11 -->
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card">
+                        <div class="position-relative">
+                            <img src="img/blog/speech-therapists.webp" alt="Speech Therapy for Children"
+                                class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Best Speech Therapists in Delhi</h5>
+                            <p class="card-text">In the bustling city of Delhi, where diversity thrives, so does the
+                                need for specialized services like speech therapy. For individuals facing challenges in
+                                communication, finding the right support is paramount. Enter Adhyayan Inclusive Learning
+                                Centre, a beacon of hope for those seeking the best speech therapists in Delhi. Let's
+                                embark on a journey to discover the essence of speech therapy and the stellar services
+                                offered by Adhyayan.</p>
+                            <a href="/blog-flile/best-speech-therapists-in-delhi.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 12 -->
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card">
+                        <div class="position-relative">
+                            <img src=" img/blog/speech-child.webp" alt="Speech Therapists" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">When Choosing a Speech Therapy School For a Child</h5>
+                            <p class="card-text">Living with autism can present unique challenges, especially when it
+                                comes to finding effective therapies and treatments. While professional intervention
+                                from places like the Adhyayan Inclusive Learning Centre and other top autism therapy
+                                centers in Delhi is crucial, parents also play a vital role in their child's
+                                development. Fortunately, there are numerous therapies that parents can integrate into
+                                their daily routine at home to support their child's progress. Here are six effective
+                                therapies along with practical examples of how to implement them</p>
+                            <a href="/blog-flile/the-importance-of-speech-therapy-for-children.html"
+                                class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 13 -->
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card">
+                        <div class="position-relative">
+                            <img src="img/blog/speech-therapy-school.webp" alt="Speech Therapy in Schools"
+                                class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"> when choosing a speech therapy school for a child?</h5>
+                            <p class="card-text">
+                                ABA is a widely recognized therapy that focuses on understanding and changing behavior.
+                                Parents can incorporate ABA techniques into everyday activities. For example, using
+                                visual schedules to outline daily routines or using positive reinforcement like stickers
+                                or tokens for completing tasks can be effective. Consistency is key in ABA therapy, so
+                                maintaining a structured environment is important.
+                            </p>
+                            <a href="/blog-flile/when-choosing-a-speech-therapy-school-for-a-child.html"
+                                class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 14 -->
+                <div class="col-md-4 mb-4">
+                    <div class="blog-card">
+                        <div class="position-relative">
+                            <img src="img/blog/symptoms-causes-and-diagnosis.webp" alt="Symptoms, Causes, and Diagnosis"
+                                class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Understanding Dyslexia: Symptoms, Causes, and Diagnosis</h5>
+                            <p class="card-text">Dyslexia, a specific learning disability, affects millions of people
+                                worldwide, making it challenging for individuals to read, write, and spell despite
+                                having average or above-average intelligence. In Delhi, the Adhyayan Inclusive Learning
+                                Centre stands as a beacon of support, providing specialized training and treatment for
+                                dyslexia. In this blog, we delve into the intricacies of dyslexia, exploring its
+                                symptoms, causes, and the crucial role of diagnosis in facilitating effective
+                                intervention.</p>
+                            <a href="/blog-flile/understanding-dyslexia.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-logo footer-List">
+                    <h3>Kinderly</h3>
+                    <p class="footer-description">
+                        It has been more than two decades that we have been working relentlessly for our CHILDREN WITH
+                        DYSLEXIA and OtherDisabilities with a well supported expert team consisting of special
+                        educators,Occupational therapists, Speech therapists, Behavior therapists,Counselling
+                        Psychologists and Career Counsellors. </p>
+                    <div class="social-icons d-flex gap-2">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-2 footer-links footer-List">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#"> home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">gallery</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">News & Events</a></li>
+                        <li><a href="#">contact</a></li>
+
+
+
+                    </ul>
+                </div>
+
+                <!-- Useful Links Column -->
+                <div class="col-md-2 footer-links footer-List">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="#">Special Education</a></li>
+                        <li><a href="#">Behaviour Modification</a></li>
+                        <li><a href="#">Counseling</a></li>
+                        <li><a href="#">Occupational Therapy</a></li>
+                        <li><a href="#">Speech Therapy</a></li>
+                        <li><a href="#">Vocational Courses</a></li>
+                        <li><a href="#">Early Intervention</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="col-md-4 footer-links footer-List">
+                    <h5>Contact Us</h5>
+                    <div class="contact-info">
+                        <!-- Phone -->
+                        <div class="info-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <div>
+                                <h6>Phone</h6>
+                                <a href="tel:+919810052388">+91 98100 52388</a>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!-- Email -->
+                        <div class="info-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            <div>
+                                <h6>Email</h6>
+                                <a href="mailto:team.adhyayan123@gmail.com">team.adhyayan123@gmail.com</a>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!-- Address -->
+                        <div class="info-item">
+                            <i class="bi bi-geo-alt-fill "></i>
+                            <div>
+                                <h6>Address</h6>
+                                <p>E-17, 2nd Floor, South Extension I, New Delhi, Delhi 110017</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom ">
+                <p>Child Therapy Template Kit by Jegtheme</p>
+                <p>Copyright © 2022. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+
+
+</body>
+
+</html>

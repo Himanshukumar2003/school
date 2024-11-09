@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Occupational Therapy</title>
+
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+
+<body>
+    <div class="bg-one main-header">
+
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/img/logo.png" alt="Logo" class="navbar-logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" onclick="toggleNavbar()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="menu-item">
+                    <div class=" mene-header  ">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <img src="/img/logo.png" class=" navbar-logo">
+                            <i class="bi bi-x" onclick="toggleNavbar()"></i>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="serviceDropdown" role="button"
+                                aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                <li><a class="dropdown-item" href="/about.html">About Us</a></li>
+                                <li><a class="dropdown-item" href="/advisory-board.html">Advisory Board</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button"
+                                aria-expanded="false">
+                                Service
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                <li><a class="dropdown-item" href="/service/behaviour-modification.html">Behaviour
+                                        Modification</a></li>
+                                <li><a class="dropdown-item" href="/service/counseling.html">Counseling Assessment</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/service/early-intervention.html">Early
+                                        Intervention</a></li>
+                                <li><a class="dropdown-item" href="/service/occupational-therapy.html">Occupational
+                                        Therapy</a></li>
+                                <li><a class="dropdown-item" href="/service/special-education.html">Special
+                                        Education</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/service/speech-therapy.html">Speech Therapy</a></li>
+                                <li><a class="dropdown-item" href="/service/vocational-courses.html">Vocational
+                                        Courses</a></li>
+                                <li><a class="dropdown-item" href="/index.html">For All School Students</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/news.html">News & Events</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/internship.html">Internship</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/training-programs.html">Traing Program</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <a href="/contact.html" class="btn btn-custom ms-3 d-none d-lg-inline-block">Contact</a>
+            </div>
+        </nav>
+
+        <div class="pages-section">
+            <div class="container">
+                <div class="pages-link text-center">
+                    <h2 class="mb-4">Occupational Therapy</h2>
+                    <div class="d-flex align-items-center justify-content-center gap-4">
+                        <a href="/index.html">Home</a>
+                        <i class="bi bi-arrow-right erro"></i>
+
+                        <a href="/service/occupational-therapy.html">Occupational Therapy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="mainPadding">
+
+        <div class="container ">
+
+
+            <ul class="nav nav-tabs" id="therapyTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview"
+                        type="button" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="why-tab" data-bs-toggle="tab" data-bs-target="#why" type="button"
+                        role="tab" aria-controls="why" aria-selected="false">Why</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="importance-tab" data-bs-toggle="tab" data-bs-target="#importance"
+                        type="button" role="tab" aria-controls="importance" aria-selected="false">Importance</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="assessment-tab" data-bs-toggle="tab" data-bs-target="#assessment"
+                        type="button" role="tab" aria-controls="assessment" aria-selected="false">Assessment</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="procedure-tab" data-bs-toggle="tab" data-bs-target="#procedure"
+                        type="button" role="tab" aria-controls="procedure" aria-selected="false">Procedure</button>
+                </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content border p-4 mt-3" id="therapyTabContent">
+                <!-- Overview Content -->
+                <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                    <h2>Overview</h2>
+                    <p><a href="/index.html">Occupational therapy </a>(OT) helps people work on cognitive, physical,
+                        social, and motor skills.
+                        For people with autism, OT programs often focus on play skills, learning strategies, and
+                        self-care.Occupational therapy helps people across the lifespan to master the skills that
+                        help children develop, recover and maintain daily living skills and also to improve thinking
+                        and reasoning. OT strategies can also help to manage sensory issues.</p>
+
+                    <div class="list-item mb-4">
+                        <p>The occupational therapist will begin by evaluating the person's current level of
+                            ability. The evaluation looks at several areas, including how the person:
+                        <p>
+                        <ul>
+                            <li>Learns</li>
+                            <li>Plays</li>
+                            <li>Cares for themselves</li>
+                            <li>Interacts with their environment</li>
+                        </ul>
+                    </div>
+                    <div class="list-item">
+                        <p>Based on this evaluation, the therapist creates goals and strategies that will allow the
+                            person to work on key skills. Some examples of common goals include:</p>
+                        <ul>
+                            <li>Independent dressing</li>
+                            <li>Eating</li>
+                            <li>Grooming</li>
+                            <li>Using the bathroom</li>
+                            <li>Fine motor skills like writing, coloring, and cutting with scissors</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>Occupational therapy usually involves half-hour to one-hour sessions. The number of sessions
+                            per week is based on individual needs.
+
+                        </p>
+                        <p>
+
+                            The person with autism may also practice these strategies and skills outside of therapy
+                            sessions at home and in other settings including school.
+
+                        </p>
+                        <p>
+                            Some OTs are specifically trained to address feeding and swallowing challenges in people
+                            with autism. They can evaluate the particular issue a person is dealing with and provide
+                            treatment plans for improving feeding-related challenges.</p>
+                    </div>
+                    <div>
+                        <h3>Occupational Therapy at Adhyayan</h3>
+                        <p>Occupational therapists provide services to children, families, caregivers, and educational
+                            staff within a variety of programs and settings. Regardless of where the evaluation and
+                            intervention services are provided, the ultimate outcome is to enable the child to
+                            participate in activities of daily living, education, work, play, leisure, and social
+                            interactions.</p>
+                    </div>
+                </div>
+
+                <!-- Why Content -->
+                <div class="tab-pane fade" id="why" role="tabpanel" aria-labelledby="why-tab">
+                    <h2>Why occupational therapy at Adhyayan?</h2>
+                    <div class="list-item mb-4">
+                        <p>At Adhyayan, we are committed to provide the best Occupational Therapy in Faridabad to
+                            patients of all ages. Our highly trained team occupational therapists give patients the
+                            chance to independently perform various activities of daily living and work-related
+                            functions through:
+                        <p>
+                        <ul>
+                            <li>Psychosocial rehabilitation such as cognitive behavioral therapy, behavioral therapy,
+                                activity scheduling, and vocational rehabilitation</li>
+                            <li>Sensory integration therapy</li>
+                            <li>Balance and coordination training</li>
+                            <li>Hand functioning training</li>
+                            <li>Handwriting training</li>
+                            <li>Splinting and adaptive devices</li>
+                            <li>Daily activity training</li>
+                            <li>Work simulation</li>
+                            <li>Oral motor therapy</li>
+                        </ul>
+                        <p>Which is why, when you choose Adhyayan for Occupational Therapy in Faridabad, you can expect
+                            swift diagnosis, a warm and friendly environment, and thorough treatment — all at an
+                            affordable price.</p>
+                    </div>
+                </div>
+
+                <!-- Importance Content -->
+                <div class="tab-pane fade" id="importance" role="tabpanel" aria-labelledby="importance-tab">
+                    <h2>Importance</h2>
+                    <p>Information on the importance of occupational therapy for development and skill-building.</p>
+                    <p>The occupational therapist collaborates with the student, parents, and educators to identify the
+                        skills of the student, the demands of the environment, and appropriate solutions for
+                        interventions. Another example is the family of a newborn baby with poor feeding skills. The
+                        occupational therapist may provide training and support for the family to enhance the baby's
+                        ability to drink from a bottle.</p>
+                    <p>Occupational therapy practitioners provide services that enable people to organize, manage, and
+                        perform their daily life occupations and activities.</p>
+                    <p>Occupational therapy services support a child's participation in activities of daily living,
+                        education, work, play, leisure, and social interactions.</p>
+                    <p>Occupational Therapy is an important part of overcoming</p>
+
+
+
+
+                    <ul>
+                        <li>Autism</li>
+                        <li>Attention deficit hyperactivity disorder</li>
+                        <li>Learning difficulty</li>
+                        <li>Developmental delay</li>
+                        <li>Cerebral palsy</li>
+                        <li>Down syndrome</li>
+
+                    </ul>
+                    <p>Occupational therapists value both occupation and activity and recognize their importance and
+                        influence on health and wellbeing.</p>
+                    <p>Occupational therapists focus on the following occupations: activities of daily living,
+                        instrumental activities of daily living, education, leisure, play, social participation, and
+                        work. The occupational therapy service delivery process includes evaluation, intervention, and
+                        outcomes.</p>
+                    <p>During the evaluation, the occupational therapist must gain an understanding of the client's
+                        priorities and his or her problems engaging in occupations and activities.</p>
+                    <div class="list-item mb-4">
+                        <p></p>
+
+                        <ul>
+                            <li>Performance skills (e.g., motor, process, and communication/ interaction skills);</li>
+                            <li>Performance patterns (e.g., as habits, routines, and roles);</li>
+                            <li>Context (e.g., physical and social environments);</li>
+                            <li>Activity demands (e.g., required actions and body functions); and</li>
+                            <li>Client factors (e.g., neuromuscular, sensory, visual, perceptual, digestive,
+                                cardiovascular, and integumentary systems)</li>
+
+                        </ul>
+
+                        <p>Many children can benefit from getting occupational therapy. They do not need to be behind on
+                            anything to benefit from this type of therapy. However, if your child is behind on any type
+                            of development, they will get even greater benefits from customized occupational therapy.
+                        </p>
+                    </div>
+                    <p>Children do not see occupational therapy as work. Instead, they see occupational therapy as games
+                        to play. They get to have fun while mastering new skills. The more games they play, the more of
+                        those skills they will master and the further ahead they will get. Occupational therapy covers
+                        all types of skills, and allows children to get caught up, and in many instances, move ahead of
+                        their peers.</p>
+                </div>
+
+
+                <div class="tab-pane fade" id="assessment" role="tabpanel" aria-labelledby="assessment-tab">
+                    <h2>Assessment</h2>
+                    <p>Occupational Therapy Assessment is a detailed assessment of Sensory-Motor and Neuro-motor
+                        Development of a child with standardized tools</p>
+
+                    <div class="list-item mb-4">
+                        <p>The sessions include:</p>
+
+                        <ul>
+                            <li>Planning, Balance, Bilateral Coordination and Sequencing, Visual Perception and
+                                Visuo-Motor Integration.</li>
+                            <li>Sensory Processing Measure (SPM): A standardized parental questionnaire that measures
+                                parent perception of sensory over or under responsivity to various sensory experiences
+                                with their child.</li>
+                            <li>Assessment of Oral Sensitivity using Oral Placement Therapy Assessment tool.: A
+                                standardized tool that assess oral placement/feeding/speech problems based on muscle
+                                systems.</li>
+                            <li>Sensory Processing Checklist questionnaire.</li>
+                            <li>Observations during unstructured play.</li>
+                            <li>Structured clinical observations of Sensory Integration.</li>
+                            <li>Interview with parents.</li>
+
+                        </ul>
+                        <p>
+                            A detailed report is formulated using results from SIPT, SPM, Sensory Processing Checklist
+                            questionnaire and clinical observations. The report also includes activities for home,</p>
+                        <p>strategies, school and life-skills recommendations. Recommendations may also include
+                            occupational therapy or structured monthly reviews with therapists.</p>
+                    </div>
+                </div>
+
+                <!-- Procedure Content -->
+                <div class="tab-pane fade" id="procedure" role="tabpanel" aria-labelledby="procedure-tab">
+                    <h2>Procedure of occupational therapy</h2>
+                    <p>Evaluation, Intervention, and Outcome</p>
+                    <p>Many professions use the process of evaluating, intervening, and targeting intervention outcomes
+                        that is outlined in the Framework. However occupational therapy's focus on occupation throughout
+                        the process makes the profession's application and use of the process unique. The process of
+                        occupational therapy service delivery begins by evaluating the client's occupational needs,
+                        problems, and concerns.</p>
+                    <p>Understanding the client as an occupational human being for whom access and participation in
+                        meaningful and productive activities is central to health and well-being, is a perspective that
+                        is unique to occupational therapy. Problems and concerns that are addressed in evaluation and
+                        intervention are also framed uniquely from an occupational perspective, are based on
+                        occupational therapy theories, and are defined as problems or risks in occupational performance.
+                    </p>
+                    <p>During intervention, the focus remains on occupation, and efforts are directed toward fostering
+                        improved engagement in occupations. A variety of therapeutic activities, including engagement in
+                        actual occupations and in daily life activities, are used in intervention.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="mainPadding bg  bg-four">
+        <div class="container">
+            <div class="text-center pb-3">
+                <h6 class="text-warning">Faq</h6>
+                <div class="service-heading">
+                    <h2 class="heading">Most Asked Questions</h2>
+                </div>
+            </div>
+            <div class="accordion-section">
+                <div class="accordion" id="businessPlanFAQ">
+                    <!-- Question 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question1">
+                                Is Occupational Therapy expensive?
+                            </button>
+                        </h2>
+                        <div id="question1" class="accordion-collapse collapse show" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                The cost of Occupational Therapy services depends on the patient’s diagnosis and the
+                                severity of their condition.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question2">
+                                What is the difference between Occupational Therapy and Physical Therapy?
+                            </button>
+                        </h2>
+                        <div id="question2" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                Occupational Therapy focuses on improving your performance on important tasks, as well
+                                as in
+                                daily activities. Whereas Physiotherapy focuses on improving your flexibility and
+                                increasing
+                                your range of joint movements, and builds strength along with muscle endurance.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question3">
+                                Which is better — Physiotherapy or Occupational Therapy?
+                            </button>
+                        </h2>
+                        <div id="question3" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                Occupational Therapy and Physiotherapy are different fields with different forms of
+                                treatment approaches that cater to different problems. Patients suffering from chronic
+                                conditions equally need both these services for holistic rehabilitation.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question4">
+                                Does Occupational Therapy help ADHD?
+                            </button>
+                        </h2>
+                        <div id="question4" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                Yes, Occupational Therapy is the most effective form of treatment for ADHD.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question5">
+                                Can Occupational Therapy help children?
+                            </button>
+                        </h2>
+                        <div id="question5" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                Yes, Occupational Therapy helps children with neurological and developmental conditions,
+                                at
+                                achieving developmental milestones and attaining age-appropriate development on all
+                                fronts —
+                                physical, cognitive, social, and emotional.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question6">
+                                What are the qualifications of an Occupational Therapist at Plexus?
+                            </button>
+                        </h2>
+                        <div id="question6" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                Occupational therapists at Plexus are specialized in different areas of rehabilitation —
+                                neuro-rehabilitation, developmental disabilities and childhood disorders, geriatric
+                                rehabilitation, hand and musculoskeletal rehabilitation, and mental health and
+                                psychosocial
+                                rehabilitation.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question7">
+                                Does Occupational Therapy really work in Autism?
+                            </button>
+                        </h2>
+                        <div id="question7" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                Yes, Occupational Therapy is the most effective form of intervention in children with
+                                Autism. A planned, goal-oriented Occupational Therapy program is promising and yields
+                                positive results in Autism.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question8">
+                                Can Occupational Therapy help my child with Dysgraphia?
+                            </button>
+                        </h2>
+                        <div id="question8" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                Yes, occupational therapists are specialized in training children with Dysgraphia who
+                                have
+                                unclear, irregular, or inconsistent handwriting that interferes with their schooling and
+                                academic performance.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question9">
+                                Why would a two-year-old need Occupational Therapy?
+                            </button>
+                        </h2>
+                        <div id="question9" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                If a two-year-old child is experiencing delayed development and is not achieving
+                                milestones
+                                — be it physical, cognitive, or socio-emotional — then they need Occupational therapy
+                                assessment.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question10">
+                                Why do occupational therapists use assessments?
+                            </button>
+                        </h2>
+                        <div id="question10" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                Occupational therapists use a number of standardized assessments to determine the exact
+                                functional status and problems of a patient, which helps in planning a specific,
+                                goal-oriented treatment plan for them.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer-bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-logo footer-List">
+                    <h3>Kinderly</h3>
+                    <p class="footer-description">
+                        It has been more than two decades that we have been working relentlessly for our CHILDREN WITH
+                        DYSLEXIA and OtherDisabilities with a well supported expert team consisting of special
+                        educators,Occupational therapists, Speech therapists, Behavior therapists,Counselling
+                        Psychologists and Career Counsellors. </p>
+                    <div class="social-icons d-flex gap-2">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-2 footer-links footer-List">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#"> home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">gallery</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">News & Events</a></li>
+                        <li><a href="#">contact</a></li>
+
+
+
+                    </ul>
+                </div>
+
+                <!-- Useful Links Column -->
+                <div class="col-md-2 footer-links footer-List">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="#">Special Education</a></li>
+                        <li><a href="#">Behaviour Modification</a></li>
+                        <li><a href="#">Counseling</a></li>
+                        <li><a href="#">Occupational Therapy</a></li>
+                        <li><a href="#">Speech Therapy</a></li>
+                        <li><a href="#">Vocational Courses</a></li>
+                        <li><a href="#">Early Intervention</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="col-md-4 footer-links footer-List">
+                    <h5>Contact Us</h5>
+                    <div class="contact-info">
+                        <!-- Phone -->
+                        <div class="info-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <div>
+                                <h6>Phone</h6>
+                                <a href="tel:+919810052388">+91 98100 52388</a>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!-- Email -->
+                        <div class="info-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            <div>
+                                <h6>Email</h6>
+                                <a href="mailto:team.adhyayan123@gmail.com">team.adhyayan123@gmail.com</a>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!-- Address -->
+                        <div class="info-item">
+                            <i class="bi bi-geo-alt-fill "></i>
+                            <div>
+                                <h6>Address</h6>
+                                <p>E-17, 2nd Floor, South Extension I, New Delhi, Delhi 110017</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom ">
+                <p>Child Therapy Template Kit by Jegtheme</p>
+                <p>Copyright © 2022. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Education</title>
+
+    <link rel="icon" type="image/png" href="/img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+
+<body>
+    <div class="bg-one main-header">
+
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/img/logo.png" alt="Logo" class="navbar-logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" onclick="toggleNavbar()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="menu-item">
+                    <div class=" mene-header  ">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <img src="/img/logo.png" class=" navbar-logo">
+                            <i class="bi bi-x" onclick="toggleNavbar()"></i>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="serviceDropdown" role="button"
+                                aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                <li><a class="dropdown-item" href="/about.html">About Us</a></li>
+                                <li><a class="dropdown-item" href="/advisory-board.html">Advisory Board</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button"
+                                aria-expanded="false">
+                                Service
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                <li><a class="dropdown-item" href="/service/behaviour-modification.html">Behaviour
+                                        Modification</a></li>
+                                <li><a class="dropdown-item" href="/service/counseling.html">Counseling Assessment</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/service/early-intervention.html">Early
+                                        Intervention</a></li>
+                                <li><a class="dropdown-item" href="/service/occupational-therapy.html">Occupational
+                                        Therapy</a></li>
+                                <li><a class="dropdown-item" href="/service/special-education.html">Special
+                                        Education</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/service/speech-therapy.html">Speech Therapy</a></li>
+                                <li><a class="dropdown-item" href="/service/vocational-courses.html">Vocational
+                                        Courses</a></li>
+                                <li><a class="dropdown-item" href="/index.html">For All School Students</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/news.html">News & Events</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/internship.html">Internship</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/training-programs.html">Traing Program</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <a href="/contact.html" class="btn btn-custom ms-3 d-none d-lg-inline-block">Contact</a>
+            </div>
+        </nav>
+        <div class="pages-section">
+            <div class="container">
+                <div class="pages-link text-center">
+                    <h2 class="mb-4">Special Education</h2>
+                    <div class="d-flex align-items-center justify-content-center gap-4">
+                        <a href="/index.html">Home</a>
+                        <i class="bi bi-arrow-right erro"></i>
+
+                        <a href="/service/special-education.html">Special Education</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="mainPadding">
+
+        <div class="container ">
+
+
+            <ul class="nav nav-tabs" id="therapyTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview"
+                        type="button" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="why-tab" data-bs-toggle="tab" data-bs-target="#why" type="button"
+                        role="tab" aria-controls="why" aria-selected="false">Why</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="importance-tab" data-bs-toggle="tab" data-bs-target="#importance"
+                        type="button" role="tab" aria-controls="importance" aria-selected="false">Importance</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="assessment-tab" data-bs-toggle="tab" data-bs-target="#assessment"
+                        type="button" role="tab" aria-controls="assessment" aria-selected="false">Assessment</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="procedure-tab" data-bs-toggle="tab" data-bs-target="#procedure"
+                        type="button" role="tab" aria-controls="procedure" aria-selected="false">Procedure</button>
+                </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content border p-4 mt-3" id="therapyTabContent">
+                <!-- Overview Content -->
+                <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                    <h2>Overview</h2>
+                    <p>Special education is the individually planned and systematically monitored arrangement of
+                        teaching procedures, adapted equipment and materials, accessible settings, and other
+                        interventions designed to help learners with special needs achieve a higher level of personal
+                        self-sufficiency and success in school and community than would be available if the student were
+                        only given access to a typical classroom education.</p>
+
+                    <p>Special education is an additional service, support, programs, specialized placements or
+                        environments to ensure that all students' educational needs are provided for.</p>
+
+                </div>
+
+                <!-- Why Content -->
+                <div class="tab-pane fade" id="why" role="tabpanel" aria-labelledby="why-tab">
+                    <h2>
+                        Why special education?</h2>
+                    <p>Differentiated education is a modified form of the basic education program, meaning that the same
+                        material is covered yet in a different way. Through differentiation, material is broken down in
+                        line with the students’ needs depending on the difficulties the child needs to overcome in order
+                        to effectively learn.</p>
+                    <p>Research data show that children with disabilities spend 80% of their time in general education
+                        classrooms, which means that they attend regular education. In other words, they learn the same
+                        material, except that certain things are done differently. Thus, for example, potential
+                        difficulties with reading or writing will be resolved through oral exams. In that sense, special
+                        education should be an integral part of the basic education program with teachers trained to
+                        work in an inclusive learning environment.</p>
+                </div>
+
+                <!-- Importance Content -->
+                <div class="tab-pane fade" id="importance" role="tabpanel" aria-labelledby="importance-tab">
+                    <h2>Importance</h2>
+
+                    <p>The most important mission of special education is to provide students with special needs with
+                        development opportunities and a learning process that will improve the quality of their life.
+                        This can only be done through the cooperation of schools and government institutions that
+                        provide free appropriate education. This way, children acquire knowledge in line with their
+                        unique needs and abilities, with the help of special educators and advanced classrooms.
+                    <p>
+                    <p>This process has a great value for society as a whole, because special-needs children get the
+                        opportunity to be accepted into the community, which helps them to become more independent and
+                        happier, surrounded by people who understand their needs and support them at every step of the
+                        way.</p>
+                </div>
+
+
+                <div class="tab-pane fade" id="assessment" role="tabpanel" aria-labelledby="assessment-tab">
+                    <h3>Assessment</h3>
+                    <p>
+                        An assessment in special education is the process used to determine a child’s specific learning
+                        strengths and needs, and to determine whether or not a child is eligible for special education
+                        services. Special Education support goes beyond what is normally offered or received in the
+                        regular school/classroom setting. Thus, Special Education not only takes care of academic
+                        education but helps in different areas of cognitive development (as described above)to improve
+                        quality of life of a child. The Individualized Education Plan (IEP) for the child takes care of
+                        the individual needs and education of the child in the following areas:
+                    </p>
+                    <div class="list-heading-text">
+
+                        <p> <strong>Attention (awareness of others, objects, or activities):</strong>Attention goals
+                            focus on sustained attention; joint attention; and shifting attention from event to event,
+                            object to object, object to person, and person to object.</p>
+
+                        <p><strong>Imitation:</strong> Imitation is an essential prerequisite skill in learning from
+                            others. Imitation goals include imitation with objects, motor actions, oral motor actions,
+                            vocalizations, verbalizations, gestures, academic tasks, and social skills.</p>
+                        <p><strong>Communication:</strong>Communication goals focus on expressive and/or receptive
+                            language and include verbal or augmented communication skills, social-communication skills,
+                            and the use of functional communication systems to provide alternatives to challenging <a
+                                href="">behaviours.</a></p>
+                        <p><strong>Social development:</strong>: Social development is a core deficit area for
+                            individuals on the autism spectrum. Goals in this area include body language, manners,
+                            conversation skills, friendship management, cooperative play skills, self-regulation,
+                            empathy, and conflict management, among others. </p>
+                        <p><strong>Play:</strong> Developmentally appropriate and functional play skills are targeted as
+                            an avenue to increase social skills with peers.</p>
+                        <p><strong>Cognitive development:</strong>Cognitive goals include a focus on conceptual
+                            development, problem-solving, academic performance, and executive functions (i.e. flexible,
+                            strategic plan of action to solve a problem or attain a future goal).</p>
+                        <p><strong>Challenging behaviours: </strong> The function of challenging behaviours are
+                            identified and appropriate alternative behaviours are taught using positive behaviour
+                            supports.</p>
+
+                        <p><strong>Sensory and motor development:</strong>Individual differences in motor and sensory
+                            functioning are identified and planned for, including tactile/touch, visual, smell, sound,
+                            and taste; environmental stressors are identified and modified.</p>
+                        <p><strong>Adaptive behaviour:</strong> Essential life skills, including hygiene, self-help and
+                            safety are considered and planned for in order to enhance personal independence and create
+                            opportunities for greater community participation, including independent living, working and
+                            recreating.</p>
+                        <p><strong>Recreation/Leisure/Physical Education:</strong>Recreation skills are important goals
+                            as they enhance cognitive, social and motor skills; enhance relationships between self and
+                            environment; shape appropriate use of unstructured time; increase opportunities to get
+                            physical exercise and stay healthy; and increase enjoyment of life.</p>
+
+                    </div>
+                </div>
+
+                <!-- Procedure Content -->
+                <div class="tab-pane fade" id="procedure" role="tabpanel" aria-labelledby="procedure-tab">
+                    <h2>Procedure of occupational therapy</h2>
+                    <p>Special education services are designed to address each student’s individual differences and
+                        needs to improve cognitive and academic skills.</p>
+                    <p>
+                        We at Adhyayan, provide remedial services for children with academic issues. In one-to-one
+                        sessions, the special education teacher has the opportunity to provide more intense support to
+                        help develop the child’s personal-social, adaptive, and cognitive skills.
+                    </p>
+                    <p>
+                        Educational plans are developed based on evaluation results and strategies and techniques are
+                        developed to meet the goals and objectives. Teachers also design and implement behavior
+                        modification programs.
+                    </p>
+
+                    <div class="list-item mb-4">
+                        <h3>
+                            Special education services can be given to children with:
+                        </h3>
+                        <ul>
+                            <li>Cerebral Palsy</li>
+                            <li>Autism</li>
+                            <li>ADHD</li>
+                            <li>Down Syndrome</li>
+                            <li>Dyslexia</li>
+                            <li>Learning difficulties</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-logo footer-List">
+                    <h3>Kinderly</h3>
+                    <p class="footer-description">
+                        It has been more than two decades that we have been working relentlessly for our CHILDREN WITH
+                        DYSLEXIA and OtherDisabilities with a well supported expert team consisting of special
+                        educators,Occupational therapists, Speech therapists, Behavior therapists,Counselling
+                        Psychologists and Career Counsellors. </p>
+                    <div class="social-icons d-flex gap-2">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-2 footer-links footer-List">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#"> home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">gallery</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">News & Events</a></li>
+                        <li><a href="#">contact</a></li>
+
+
+
+                    </ul>
+                </div>
+
+                <!-- Useful Links Column -->
+                <div class="col-md-2 footer-links footer-List">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="#">Special Education</a></li>
+                        <li><a href="#">Behaviour Modification</a></li>
+                        <li><a href="#">Counseling</a></li>
+                        <li><a href="#">Occupational Therapy</a></li>
+                        <li><a href="#">Speech Therapy</a></li>
+                        <li><a href="#">Vocational Courses</a></li>
+                        <li><a href="#">Early Intervention</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="col-md-4 footer-links footer-List">
+                    <h5>Contact Us</h5>
+                    <div class="contact-info">
+                        <!-- Phone -->
+                        <div class="info-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <div>
+                                <h6>Phone</h6>
+                                <a href="tel:+919810052388">+91 98100 52388</a>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!-- Email -->
+                        <div class="info-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            <div>
+                                <h6>Email</h6>
+                                <a href="mailto:team.adhyayan123@gmail.com">team.adhyayan123@gmail.com</a>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!-- Address -->
+                        <div class="info-item">
+                            <i class="bi bi-geo-alt-fill "></i>
+                            <div>
+                                <h6>Address</h6>
+                                <p>E-17, 2nd Floor, South Extension I, New Delhi, Delhi 110017</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom ">
+                <p>Child Therapy Template Kit by Jegtheme</p>
+                <p>Copyright © 2022. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/index.js"></script>
+
+
+</body>
+
+</html>

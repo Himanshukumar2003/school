@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Therapy</title>
+
+    <link rel="icon" type="/image/png" href="img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+
+<body>
+    <div class="bg-one main-header">
+
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/img/logo.png" alt="Logo" class="navbar-logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" onclick="toggleNavbar()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="menu-item">
+                    <div class=" mene-header  ">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <img src="/img/logo.png" class=" navbar-logo">
+                            <i class="bi bi-x" onclick="toggleNavbar()"></i>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="serviceDropdown" role="button"
+                                aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                <li><a class="dropdown-item" href="/about.html">About Us</a></li>
+                                <li><a class="dropdown-item" href="/advisory-board.html">Advisory Board</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button"
+                                aria-expanded="false">
+                                Service
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
+                                <li><a class="dropdown-item" href="/service/behaviour-modification.html">Behaviour
+                                        Modification</a></li>
+                                <li><a class="dropdown-item" href="/service/counseling.html">Counseling Assessment</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/service/early-intervention.html">Early
+                                        Intervention</a></li>
+                                <li><a class="dropdown-item" href="/service/occupational-therapy.html">Occupational
+                                        Therapy</a></li>
+                                <li><a class="dropdown-item" href="/service/special-education.html">Special
+                                        Education</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/service/speech-therapy.html">Speech Therapy</a></li>
+                                <li><a class="dropdown-item" href="/service/vocational-courses.html">Vocational
+                                        Courses</a></li>
+                                <li><a class="dropdown-item" href="/index.html">For All School Students</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/news.html">News & Events</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/internship.html">Internship</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/training-programs.html">Traing Program</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <a href="/contact.html" class="btn btn-custom ms-3 d-none d-lg-inline-block">Contact</a>
+            </div>
+        </nav>
+
+        <div class="pages-section">
+            <div class="container">
+                <div class="pages-link text-center">
+                    <h2 class="mb-4">Speech Therapy</h2>
+                    <div class="d-flex align-items-center justify-content-center gap-4">
+                        <a href="/index.html">Home</a>
+                        <i class="bi bi-arrow-right erro"></i>
+
+                        <a href="/service/speech-therapy.html">Speech Therapy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="mainPadding">
+
+        <div class="container ">
+
+
+            <ul class="nav nav-tabs" id="therapyTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview"
+                        type="button" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Importance-tab" data-bs-toggle="tab" data-bs-target="#Why"
+                        type="button" role="tab" aria-controls="why" aria-selected="false">Why</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Benefits
+                    -tab" data-bs-toggle="tab" data-bs-target="#Benefits
+                    " type="button" role="tab" aria-controls="importance" aria-selected="false">Benefits
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="Benefits
+                    -tab" data-bs-toggle="tab" data-bs-target="#Children
+                    " type="button" role="tab" aria-controls="Children" aria-selected="false">Children services
+                    </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="consult 
+                    -tab" data-bs-toggle="tab" data-bs-target="#consult 
+                    " type="button" role="tab" aria-controls="consult" aria-selected="false">When to consult
+                    </button>
+                </li>
+
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content border p-4 mt-3" id="therapyTabContent">
+                <!-- Overview Content -->
+                <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                    <h2>Overview</h2>
+                    <p>Speech-language therapy addresses challenges with language and communication. It can help people
+                        with autism improve their verbal, nonverbal, and social communication. The overall goal is to
+                        help the person communicate in more useful and functional ways.</p>
+
+                    <p>Speech and language therapy for children with special needs encompasses a variety of methods,
+                        dependent upon each individual’s strengths and weaknesses. At Adhyayan, we are dedicated to
+                        teaching students a way to functionally and socially communicate with others within the school
+                        community and later in life.
+                    <p>
+                    <p>A <a href="service/speech-therapy.html"> speech therapy </a>program begins with an evaluation by
+                        a speech-language pathologist (SLP) to
+                        assess the person’s communication strengths and challenges. From this evaluation, the SLP
+                        creates individual goals for therapy.</p>
+                    <div class="list-item">
+                        <p>Examples of the skills that speech therapy may work on include:</p>
+                        <ul>
+                            <li>Strengthening the muscles in the mouth, jaw and neck</li>
+                            <li>Making clearer speech sounds</li>
+                            <li>Matching emotions with the correct facial expression</li>
+                            <li>Understanding body language</li>
+                            <li>Responding to questions</li>
+                            <li>Matching a picture with its meaning</li>
+                            <li>Using a speech app on an iPad to produce the correct word</li>
+                            <li>Modulating tone of voice</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Why Content -->
+                <div class="tab-pane fade" id="Why" role="tabpanel" aria-labelledby="Why">
+                    <h2>Why speech therapy at Adhyayan?</h2>
+                    <p>Children are treated for different speech disorders, stuttering, problems pronouncing words,
+                        trouble with pitch, volume or quality of speech, and having a limited understanding of words and
+                        their meaning. Some children have problems putting words together or use language in an
+                        inappropriate way. Others have memory and attention disorders. Some children have problems
+                        swallowing, chewing, coughing and refusing food. Additionally, speech therapy may be necessary
+                        for a child who has experienced speech impairment due to an illness or injury. There are a
+                        variety of reasons why a child may need speech therapy. If you notice that your child is not on
+                        par with their peers or developmental milestones for their age, ongoing or intensive speech
+                        therapy sessions may be beneficial to your child.
+                    </p>
+                    <p>The speech language therapists at Adhyayan specialize in a variety of methods to address the
+                        communication needs of students exhibiting various disorders and/or syndromes which include
+                        autism spectrum disorders, Down Syndrome, Rett Syndrome, cerebral palsy, William’s Syndrome,
+                        Angelman Syndrome, developmental disabilities, and other rare genetic syndromes. They have been
+                        trained to deliver services to address all areas of speech and language including receptive
+                        language, auditory processing, expressive language, pragmatic language and social communication,
+                        articulation, voice, and fluency disorders as well as dysphagia, oral motor, and feeding needs.
+                    </p>
+
+                </div>
+
+
+
+
+                <div class="tab-pane fade" id="Benefits" role="tabpanel" aria-labelledby="Benefits-tab">
+                    <h2 className="text-2xl font-bold text-primary mb-6">Benefits</h2>
+
+                    <h3>What are the Benefits/Advantages of Speech Therapy for Children?</h3>
+                    <div class="list-item">
+                        <p>Speech therapy has many benefits for children, including:</p>
+                        <ul>
+                            <li>Improving communication so they will be able to express thoughts and feelings</li>
+                            <li>Enabling them to speak so that others will understand what they are saying</li>
+                            <li>Preparing them for school so that they can keep up with other children in learning</li>
+                            <li>Improves vocal quality</li>
+                            <li>Increases self-esteem and independence</li>
+
+                        </ul>
+
+                    </div>
+                    <div class="therapy">
+                        <h3>Helps with Communication</h3>
+                        <p>
+                            Providing children without a voice a way to communicate through unaided and/or aided
+                            communication (e.g. no tech communication books, low and mid tech communication devices,
+                            high tech communication devices and/or communication apps). Speech and language therapy is
+                            not just about speech; it also includes language. Many people have a misconception that
+                            speech therapy is just about the speech but it is so much more than that.
+                        </p>
+                    </div>
+
+                    <div class="therapy">
+                        <h3> Helps with Social Skills</h3>
+                        <p>
+                            Appropriate pragmatic/social skills are a key component to interacting with others in their
+                            community and life. When you have limited, or have no functional speech, pragmatic language
+                            skills are often significantly delayed and disordered. Social skills can be targeted with
+                            the use of video modeling, role playing, specific therapy apps, social stories and other
+                            various strategies and tools. The use of aided communication with these strategies to work
+                            on improving these social skills is an important aspect of speech therapy.
+                        </p>
+                    </div>
+
+
+                    <div class="therapy">
+                        <h3>Helps with Reading</h3>
+                        <p>
+                            Speech delay can cause problems listening, reading and writing. Reading and literacy skills
+                            can significantly aid in communication. When you can spell, you can communicate freely.
+                            Teaching these essential skills can be the key to better communication with others.
+                        </p>
+                    </div>
+
+
+                    <div class="therapy">
+                        <h3>Enhances Alternative Communication Methods</h3>
+                        <p>
+                            Work on other communication strategies to aid communication such as gestures, sign language,
+                            approximations, vocalizations, and/or other means of communication. As humans, we
+                            communicate with a total communication approach. We communicate via speech, facial
+                            expressions, gestures, eye contact, writing, typing and many other forms of communication.
+                        </p>
+                        <p>Teaching on how to communicate in other ways in addition to a formal means of aided
+                            communication (e.g. use the sign for “bathroom”, “eat” and “drink”, tap on a person’s
+                            shoulder to get their attention, etc). Also, if a child has specific sounds that are being
+                            used consistently, make them meaningful. For example, if a child can say “ha,” use that for
+                            “help”. For the approximation, “ba” you might use that for “book” if that is important to
+                            that specific individual.</p>
+                    </div>
+
+                    <div class="therapy">
+                        <h3>Reduces Communication Frustrations</h3>
+                        <p>
+                            Speech therapy helps children improve communication skills with other children and adults.
+                            It focuses on improving speech muscles through special exercises. Speech exercises involve
+                            repeating sounds and imitating the speech therapist.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="Children" role="tabpanel" aria-labelledby="Children-tab">
+                    <div class="section">
+                        <h2>Children services:</h2>
+                        <h3>Why Do Some Kids Need Speech-Language Therapy?</h3>
+                        <p>Kids might need speech-language therapy for many reasons, including:</p>
+                        <ul>
+                            <li>hearing impairments</li>
+                            <li>cognitive (intellectual, thinking) or other developmental delays</li>
+                            <li>weak oral muscles</li>
+                            <li>chronic hoarseness</li>
+                            <li>cleft lip or cleft palate</li>
+                            <li>autism</li>
+                            <li>motor planning problems</li>
+                            <li>articulation problems</li>
+                            <li>fluency disorders</li>
+                            <li>respiratory problems (breathing disorders)</li>
+                            <li>feeding and swallowing disorders</li>
+                            <li>traumatic brain injury</li>
+                        </ul>
+                        <p>Therapy should begin as soon as possible. Children who start therapy early (before they're 5
+                            years old) tend to have better results than those who begin later.</p>
+                        <p>This doesn't mean that older kids won't do well in therapy. Their progress might be slower,
+                            though, because they have learned patterns that need to be changed.</p>
+                    </div>
+
+                    <div class="section">
+                        <h3>Speech-Language Assessment:</h1>
+                            <p>Includes assessment for children with developmental delay (Autism spectrum Disorder,
+                                Cerebral palsy, Down syndrome, Mental retardation) cleft lip and palate
+                                /stuttering/voice disorders/misarticulation .Adults with communication deficits due to
+                                stroke, neurological-based disorders including ALS, Parkinson's, Multiple Sclerosis,
+                                Myasthenia Gravis, brain injuries, cancer etc</p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="consult" role="tabpanel" aria-labelledby="consult-tab">
+                    <h2>When to consult a Speech Therapist?</h2>
+
+                    <p>Referral to a speech pathologist is appropriate when a parent, teacher, or other professional is
+                        concerned because a child is demonstrating any of the following difficulties:</p>
+
+                    <ul>
+                        <li>delayed onset or delayed development of speech and language skills</li>
+                        <li>regression or loss of communication skills;</li>
+                        <li>problems with understanding spoken language;</li>
+                        <li>frustration and challenging behaviors resulting from communication difficulties</li>
+                        <li>difficulty with conversation, forming relationships, and socializing with peers, family
+                            members, and other learning difficulties.</li>
+                    </ul>
+
+                    <p>At the Adhyayan, children are evaluated for all types of speech and language problems, such as
+                        articulation, cerebral palsy, stuttering, cluttering, delayed speech and language, various voice
+                        problems and dyslexia. After evaluation, patients are advised speech therapy if required.
+                        Parents are also counseled regarding home training. Periodical revaluation is an ongoing
+                        process.</p>
+
+                    <p>Speech and Language assessment is provided for children diagnosed with</p>
+
+                    <ul>
+                        <li>Autism</li>
+                        <li>Hearing impairment</li>
+                        <li>Cognitive delay/developmental delay</li>
+                        <li>Cerebral palsy</li>
+                        <li>Specific language impairment</li>
+                        <li>Other:</li>
+                        <ul class="nested">
+                            <li>Misarticulation</li>
+                            <li>Stuttering</li>
+                            <li>Voice disorder</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="mainPadding bg bg-four">
+        <div class="container">
+            <div class="text-center pb-3">
+                <h6 class="text-warning">Faq</h6>
+                <div class="service-heading">
+                    <h2 class="heading">Most Asked Questions</h2>
+                </div>
+            </div>
+            <div class="accordion-section">
+                <div class="accordion" id="businessPlanFAQ">
+                    <!-- Question 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question1">
+
+                                Who are speech therapists?
+
+                            </button>
+                        </h2>
+                        <div id="question1" class="accordion-collapse collapse show" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                Speech therapists are rehabilitation professionals who deal with adults and children
+                                having
+                                speech related disorders and/ or swallowing difficulties. They assess, plan, and treat
+                                conditions affecting speech, communication, and development of language or voice. They
+                                also
+                                specialize in the management of Dysphagia or swallowing disorders.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question2">
+
+                                What is the cost of Speech Therapy?
+
+                            </button>
+                        </h2>
+                        <div id="question2" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                At the best Speech Therapy center in Bangalore, the cost starts with INR 1,000 per
+                                session
+                                depending on the deficits addressed.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question3">
+                                Does Speech Therapy actually work?
+
+                            </button>
+                        </h2>
+                        <div id="question3" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                Yes, Speech Therapy is the most effective form of treatment for speech and swallowing
+                                disorders.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question4">
+
+                                What age is best for Speech Therapy?
+
+                            </button>
+                        </h2>
+                        <div id="question4" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                The best age to start speech therapy is when you start noticing the deficits in your
+                                child.
+                                It is best to schedule a consultation as early as possible with the best child speech
+                                therapist in Bangalore.
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question5">
+
+                                What are the qualifications of a speech therapist at Plexus?
+
+                            </button>
+                        </h2>
+                        <div id="question5" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                Speech therapists specialize in adult neurological conditions, childhood disorders,
+                                stammering and stuttering, and Dysphagia management.
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question6">
+
+                                How often should I visit a speech therapist?
+
+                            </button>
+                        </h2>
+                        <div id="question6" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                It depends on the type and severity of your condition.
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question7">
+
+                                Why should an individual consult a speech therapist?
+
+                            </button>
+                        </h2>
+                        <div id="question7" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                If an individual has issues with speech, language, communication, or swallowing, then
+                                they
+                                should consult a speech therapist. At Plexus, you can get the best Speech Therapy for
+                                adults
+                                and kids in Bangalore
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question8">
+
+                                Can speech therapists treat stuttering?
+
+                            </button>
+                        </h2>
+                        <div id="question8" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                Yes, speech therapists do treat stuttering.
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question9">
+
+                                Do speech therapists perform surgeries?
+
+                            </button>
+                        </h2>
+                        <div id="question9" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+                                No, speech therapists do not perform surgeries.
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#question10">
+
+                                Does Speech Therapy really work for toddlers?
+
+                            </button>
+                        </h2>
+                        <div id="question10" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                            <div class="accordion-body">
+
+                                Yes, a speech therapist helps in achieving all the developmental milestones of speech
+                                and
+                                language of your toddler. At Plexus, we provide treatment from the best speech therapist
+                                for
+                                toddlers in Bangalore. Book an appointment today!
+
+
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#question11">
+
+                                    When does a child’s speech become clear?
+
+                                </button>
+                            </h2>
+                            <div id="question11" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                                <div class="accordion-body">
+                                    A child’s speech becomes clear by 2.5 to 3 years.
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#question12">
+
+
+                                    12. How does Speech Therapy work for deaf people?
+
+                                </button>
+                            </h2>
+                            <div id="question12" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                                <div class="accordion-body">
+                                    Prescribing a hearing aid, training for augmentative modes of communication, and
+                                    training in sign language can help deaf people.
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#question13">
+                                    Is Speech Therapy considered special needs?
+                                </button>
+                            </h2>
+                            <div id="question13" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                                <div class="accordion-body">
+                                    No, Speech Therapy is not considered to be special needs.
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#question14">
+
+                                    Does Speech Therapy help Aphasia?
+
+                                </button>
+                            </h2>
+                            <div id="question14" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                                <div class="accordion-body">
+                                    Yes, Speech Therapy helps in Aphasia.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#question15">
+
+                                    How to know if your child is speech delayed?
+                                </button>
+                            </h2>
+                            <div id="question15" class="accordion-collapse collapse" data-bs-parent="#businessPlanFAQ">
+                                <div class="accordion-body">
+                                    If your child’s speech development does not match the normal developmental
+                                    milestones
+                                    and differs from other children of the same age, then they might have delayed
+                                    speech.
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer-bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-logo footer-List">
+                    <h3>Kinderly</h3>
+                    <p class="footer-description">
+                        It has been more than two decades that we have been working relentlessly for our CHILDREN WITH
+                        DYSLEXIA and OtherDisabilities with a well supported expert team consisting of special
+                        educators,Occupational therapists, Speech therapists, Behavior therapists,Counselling
+                        Psychologists and Career Counsellors. </p>
+                    <div class="social-icons d-flex gap-2">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-2 footer-links footer-List">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#"> home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">gallery</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">News & Events</a></li>
+                        <li><a href="#">contact</a></li>
+
+
+
+                    </ul>
+                </div>
+
+                <!-- Useful Links Column -->
+                <div class="col-md-2 footer-links footer-List">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="#">Special Education</a></li>
+                        <li><a href="#">Behaviour Modification</a></li>
+                        <li><a href="#">Counseling</a></li>
+                        <li><a href="#">Occupational Therapy</a></li>
+                        <li><a href="#">Speech Therapy</a></li>
+                        <li><a href="#">Vocational Courses</a></li>
+                        <li><a href="#">Early Intervention</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="col-md-4 footer-links footer-List">
+                    <h5>Contact Us</h5>
+                    <div class="contact-info">
+                        <!-- Phone -->
+                        <div class="info-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <div>
+                                <h6>Phone</h6>
+                                <a href="tel:+919810052388">+91 98100 52388</a>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!-- Email -->
+                        <div class="info-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            <div>
+                                <h6>Email</h6>
+                                <a href="mailto:team.adhyayan123@gmail.com">team.adhyayan123@gmail.com</a>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!-- Address -->
+                        <div class="info-item">
+                            <i class="bi bi-geo-alt-fill "></i>
+                            <div>
+                                <h6>Address</h6>
+                                <p>E-17, 2nd Floor, South Extension I, New Delhi, Delhi 110017</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom ">
+                <p>Child Therapy Template Kit by Jegtheme</p>
+                <p>Copyright © 2022. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+
+
+</body>
+
+</html>

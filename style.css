@@ -368,10 +368,7 @@ p {
         background-color: white;
     }
 
-    .btn {
-        display: none;
-        /* Hide button on smaller screens */
-    }
+
 }
 
 @media (min-width: 992px) {

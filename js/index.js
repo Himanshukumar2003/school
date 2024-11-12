@@ -1,14 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-    console.log('DOM fully loaded');
     const cards = document.querySelectorAll(".card");
 
     function revealCards() {
         const windowHeight = window.innerHeight;
-        console.log('Window height:', windowHeight); // Debugging line
         cards.forEach(card => {
             const cardTop = card.getBoundingClientRect().top;
             if (cardTop < windowHeight - 100) {
-                console.log('Card in view:', card); // Debugging line
                 card.classList.add("show");
             }
         });
@@ -46,10 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentPath = window.location.pathname;
 
     navLinks.forEach(link => {
-        console.log("Checking link:", link.getAttribute("href")); // Debugging line
 
         if (currentPath.includes(link.getAttribute("href"))) {
-            console.log("Active link found:", link); // Debugging line
             link.classList.add("active-link");
         }
     });
@@ -60,7 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     const images = document.querySelectorAll('.scale-image');
-    console.log(images)
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting && !entry.target.classList.contains('animated')) {

@@ -55,7 +55,43 @@ const reviews = [
         "star": 5,
         "date": "6 months ago",
         "review": "If you want to help your child with Autism, just join AILC! The guidance is exceptional, and they truly care about making a positive change."
-    }
+    },
+    {
+        "name": "Vishal Adhikari",
+        "image": "/img/google/vishal.png",
+        "star": 5,
+        "date": "5 months ago",
+        "review": "The autism services here have been a game-changer for our family. The therapists are patient and truly understand our child's needs. We've seen significant improvement in social skills and behavior. The personalized approach and constant communication make a huge difference. We're extremely grateful for this team."
+    },
+
+    {
+        "name": "Z A I D K H A N",
+        "image": "/img/google/zaidkhand.png",
+        "star": 5,
+        "date": "5 months ago",
+        "review": "Our experience with the occupational therapists at Adhyayan Inclusive Learning Centre has been fantastic. They are attentive, patient, and innovative in their approach. My child's motor skills and daily living activities have improved significantly. The therapists truly understand individual needs, making sessions both productive and enjoyable. Highly recommend"
+    },
+    {
+        "name": "",
+        "image": "",
+        "star": 5,
+        "date": "",
+        "review": ""
+    },
+    {
+        "name": "",
+        "image": "",
+        "star": 5,
+        "date": "",
+        "review": ""
+    },
+    {
+        "name": "",
+        "image": "",
+        "star": 5,
+        "date": "",
+        "review": ""
+    },
 ]
 
 
@@ -114,8 +150,6 @@ function renderReviews() {
         const reviewText = document.createElement("p");
         reviewText.classList.add("reviews");
         reviewText.textContent = review.review;
-
-        // Append elements
         textDiv.appendChild(name);
         textDiv.appendChild(date);
         infoDiv.appendChild(imgDiv);

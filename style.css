@@ -274,6 +274,8 @@ p {
 }
 
 /* Responsive Styles */
+
+
 @media (max-width: 991px) {
     .footer-List {
         padding: 0px !important;
@@ -672,8 +674,16 @@ h3 {
 }
 
 .about-section-fist-img-sec {
-    position: relative;
+    position: relative !important;
 }
+
+@media (max-width: 767px) {
+    .stats-card {
+        left: 25% !important;
+
+    }
+}
+
 
 .stats-card {
     position: absolute;
@@ -683,8 +693,7 @@ h3 {
     display: flex;
     text-align: center;
     position: absolute;
-    width: 100%;
-    left: 5%;
+    left: 16%;
     align-items: center;
     justify-content: center;
     box-shadow: 0px 3px 15px 0px rgba(17.999999999999996, 28.00000000000005, 81.99999999999999, 0.1);
@@ -748,23 +757,127 @@ h6 {
 }
 
 
-.Abot-section-fist-img {
+.Abot-section-fist-img img {
     height: 500px;
     object-fit: cover;
-    padding: 0px 30px 0px 0px;
     position: relative;
     object-position: center center;
     border-radius: 50% 0% 0% 0%;
+    width: 100%;
 }
+
+
+.Abot-section-fist-img {}
+
 
 .about-section-snd-img {
     height: 555px;
     object-fit: cover;
+
     object-position: center center;
     border-radius: 0% 0% 50% 0%;
-    padding: 70px 0px 0px 30px;
+    padding: 70px 0px 0px 0px;
 }
 
+.about-section-snd-img img {
+    border-radius: 0% 0% 50% 0%;
+
+}
+
+.misson {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.misson::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #ff6600;
+    /* Orange border */
+    border-radius: 10px;
+    z-index: -1;
+    /* Make sure it stays behind the card */
+    transition: all 0.8s ease;
+    visibility: hidden;
+    /* Initially hidden */
+    opacity: 0;
+    /* Initially invisible */
+}
+
+/* Hover effect: animate the border on hover */
+.misson:hover::before {
+    visibility: visible;
+    /* Make the border visible */
+    opacity: 1;
+    /* Fade in the border */
+    animation: border-animation 1s forwards;
+    /* Apply the border animation */
+}
+
+/* Define the border animation: stroke only from top to bottom */
+@keyframes border-animation {
+    0% {
+        height: 0;
+        top: 0;
+    }
+
+    50% {
+        height: 100%;
+        top: 0;
+    }
+
+    100% {
+        height: 100%;
+        top: 0;
+    }
+}
+
+
+
+
+.misson p {
+    text-align: center;
+    width: 100%;
+}
+
+.icon-container {
+    background-color: var(--e-global-color-accent);
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.misson:hover .icon-container {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.misson:hover .icon-container i {
+    font-size: 2rem;
+}
+
+
+
+@media (min-width: 1400px) {
+    .info-box {
+        padding: 51px
+    }
+}
 
 .about-snd-img {
     object-fit: cover;
@@ -1043,7 +1156,18 @@ h6 {
 
 
 
+.reviews {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
+.expanded {
+    -webkit-line-clamp: unset;
+    overflow: visible;
+}
 
 .testimonial-card {
     background: #ffffff;
@@ -1306,15 +1430,7 @@ small {
 
 
 
-@media (min-width: 992px) and (max-width: 1399px) {
-    .info-box {
-        padding: 0px !important;
-    }
-
-    .conteact {
-        padding: 36px !important;
-    }
-}
+@media (min-width: 992px) and (max-width: 1399px) {}
 
 
 

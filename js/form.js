@@ -1,4 +1,8 @@
 
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
 
 
 (function () {
@@ -11,7 +15,6 @@
             event.preventDefault()
             event.stopPropagation()
         } else {
-            // If the form is valid, you can add your form submission logic here
             alert('Form submitted successfully!')
         }
 
@@ -32,10 +35,6 @@
 
 
 
-function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-}
 
 
 

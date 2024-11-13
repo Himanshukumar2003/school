@@ -141,21 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-$(document).ready(function () {
-    $("#testimonial-carousel").owlCarousel({
-        items: 2,
-        margin: 20,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        dots: true, // Enable dots
-        nav: false,
-        responsive: {
-            0: { items: 1 },
-            768: { items: 2 }
-        }
-    });
-});
+
 
 
 $(document).ready(function () {

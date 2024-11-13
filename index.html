@@ -175,21 +175,22 @@
                 <div class="col-lg-7">
                     <div class="appointment-box">
                         <h3 class="mb-4">Make Appointment</h3>
-                        <form id="appointmentForm" novalidate>
+                        <form id="appointmentForm" action="php/appointment.php" method="POST" novalidate>
                             <div class="row">
-                                <div class=" col-md-6 col-12 mb-4">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                <div class="col-md-6 col-12 mb-4">
+                                    <input type="text" class="form-control" name="name" id="name"
+                                        placeholder="Your Name" required>
                                     <div class="invalid-feedback">Please enter your name.</div>
                                 </div>
-                                <div class=" col-md-6 col-12  mb-4">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email"
-                                        required>
+                                <div class="col-md-6 col-12 mb-4">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Your Email" required>
                                     <div class="invalid-feedback">Please enter a valid email address.</div>
                                 </div>
-                                <div class=" col-md-6 col-12 mb-4">
-                                    <select class="form-control" id="services" required>
+                                <div class="col-md-6 col-12 mb-4">
+                                    <select class="form-control" name="services" id="services" required>
                                         <option value="" disabled selected>Select Services</option>
-                                        <option> Behaviour Modification</option>
+                                        <option>Behaviour Modification</option>
                                         <option>Counseling Assessment</option>
                                         <option>Early Intervention</option>
                                         <option>Occupational Therapy</option>
@@ -199,14 +200,15 @@
                                     </select>
                                     <div class="invalid-feedback">Please select a service.</div>
                                 </div>
-                                <div class=" col-md-6 col-12 mb-4">
-                                    <input type="date" class="form-control" id="date" required>
+                                <div class="col-md-6 col-12 mb-4">
+                                    <input type="date" class="form-control" name="date" id="date" required>
                                     <div class="invalid-feedback">Please select a date.</div>
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary">Book Now</button>
                         </form>
                     </div>
+
 
                 </div>
             </div>

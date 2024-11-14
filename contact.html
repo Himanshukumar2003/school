@@ -146,45 +146,41 @@
             <div class="row contact-container">
                 <div class="col-md-8">
                     <div class="form-container">
-                        <form id="contactForm" class="needs-validation" novalidate>
+                        <form id="contactForm" class="needs-validation" novalidate action="/php/contact-form.php"
+                            method="post">
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="firstName" class="form-label">First Name</label>
-                                    <input type="text" class="form-control" id="firstName" required minlength="3">
-                                    <div class="invalid-feedback">
-                                        Please enter your first name (minimum 3 characters).
+                                    <input type="text" class="form-control" name="firstn" id="firstName" required
+                                        minlength="3">
+                                    <div class="invalid-feedback">Please enter your first name (minimum 3 characters).
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="lastName" class="form-label">Last Name</label>
-                                    <input type="text" class="form-control" id="lastName" required minlength="3">
-                                    <div class="invalid-feedback">
-                                        Please enter your last name (minimum 3 characters).
+                                    <input type="text" class="form-control" name="lastn" id="lastName" required
+                                        minlength="3">
+                                    <div class="invalid-feedback">Please enter your last name (minimum 3 characters).
                                     </div>
                                 </div>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" required minlength="8">
-                                <div class="invalid-feedback">
-                                    Please enter a valid email address (minimum 8 characters).
+                                <input type="email" class="form-control" name="email" id="email" required minlength="8">
+                                <div class="invalid-feedback">Please enter a valid email address (minimum 8 characters).
                                 </div>
                             </div>
                             <div class="mb-3">
                                 <label for="subject" class="form-label">Subject</label>
-                                <input type="text" class="form-control" id="subject" required>
-                                <div class="invalid-feedback">
-                                    Please enter a subject.
-                                </div>
+                                <input type="text" class="form-control" name="subject" id="subject" required>
+                                <div class="invalid-feedback">Please enter a subject.</div>
                             </div>
                             <div class="mb-3">
                                 <label for="message" class="form-label">Your Message</label>
-                                <textarea class="form-control" id="message" rows="5" required></textarea>
-                                <div class="invalid-feedback">
-                                    Please enter your message.
-                                </div>
+                                <textarea class="form-control" name="message" id="message" rows="5" required></textarea>
+                                <div class="invalid-feedback">Please enter your message.</div>
                             </div>
-                            <button type="submit" class="btn btn-send">SEND</button>
+                            <button type="submit" name="submit" class="btn btn-send">SEND</button>
                         </form>
                     </div>
                 </div>

@@ -1,34 +1,58 @@
 <?php
-// Check if the form is submitted via POST
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get form data
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $services = $_POST['services'];
-    $date = $_POST['date'];
-    
-    // Email details
-    $to = "devliyalhimanshu@gmail.com";
-    $subject = "New Appointment Request";
-    $message = "You have received a new appointment request.\n\n";
-    $message .= "Name: " . htmlspecialchars($name) . "\n";
-    $message .= "Email: " . htmlspecialchars($email) . "\n";
-    $message .= "Service: " . htmlspecialchars($services) . "\n";
-    $message .= "Date: " . htmlspecialchars($date) . "\n";
-    
-    // Headers for email
-    $headers = "From: " . $email . "\r\n" .
-               "Reply-To: " . $email . "\r\n" .
-               "X-Mailer: PHP/" . phpversion();
-    
-    // Send email
-    if (mail($to, $subject, $message, $headers)) {
-        echo "Appointment booked successfully! We will contact you soon.";
-    } else {
-        echo "Failed to send appointment request. Please try again.";
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $name = trim($_POST['name']);
+    $email = trim($_POST['email']);
+    $services = trim($_POST['services']);
+    $date = trim($_POST['date']);
+    $errors = [];
+
+    if (empty($name)) {
+        $errors[] = "Please enter your name.";
     }
-} else {
-    // Redirect to form page if accessed directly
-    header("Location: index.html");
-    exit();
+
+    if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = "Please enter a valid email address.";
+    }
+
+    if (empty($services)) {
+        $errors[] = "Please select a service.";
+    }
+
+    if (empty($date)) {
+        $errors[] = "Please select a date.";
+    }
+
+    if (count($errors) === 0) {
+        $to = "devliyalhimanshu@gmail.com"; 
+        $subject = "New Appointment Booking";
+        $message = "
+        <html>
+        <head>
+            <title>New Appointment Booking</title>
+        </head>
+        <body>
+            <h2>Appointment Details</h2>
+            <p><strong>Name:</strong> {$name}</p>
+            <p><strong>Email:</strong> {$email}</p>
+            <p><strong>Service:</strong> {$services}</p>
+            <p><strong>Date:</strong> {$date}</p>
+        </body>
+        </html>";
+
+        $headers = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+        $headers .= "From: noreply@yourwebsite.com" . "\r\n"; 
+
+        if (mail($to, $subject, $message, $headers)) {
+            echo "<script>alert('Thank you! Your appointment has been booked.'); window.location.href = 'index.html';</script>";
+        } else {
+            echo "<p style='color:red;'>Failed to send email. Please try again later.</p>";
+        }
+    } else {
+        foreach ($errors as $error) {
+            echo "<p style='color:red;'>$error</p>";
+        }
+        echo "<script>window.history.back();</script>";
+    }
 }
+?>

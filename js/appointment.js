@@ -1,16 +1,11 @@
-
-
-
 document.getElementById("appointmentForm").addEventListener("submit", function (event) {
-    // Get form elements
+    event.preventDefault();
     const name = document.getElementById("name");
     const email = document.getElementById("email");
     const services = document.getElementById("services");
     const date = document.getElementById("date");
-
     let isFormValid = true;
 
-    // Validate name
     if (name.value.trim() === "") {
         name.classList.add("is-invalid");
         isFormValid = false;
@@ -18,7 +13,6 @@ document.getElementById("appointmentForm").addEventListener("submit", function (
         name.classList.remove("is-invalid");
     }
 
-    // Validate email
     if (email.value.trim() === "") {
         email.classList.add("is-invalid");
         isFormValid = false;
@@ -30,7 +24,6 @@ document.getElementById("appointmentForm").addEventListener("submit", function (
         email.classList.remove("is-invalid");
     }
 
-    // Validate services
     if (services.value === "") {
         services.classList.add("is-invalid");
         isFormValid = false;
@@ -38,7 +31,6 @@ document.getElementById("appointmentForm").addEventListener("submit", function (
         services.classList.remove("is-invalid");
     }
 
-    // Validate date
     if (date.value === "") {
         date.classList.add("is-invalid");
         isFormValid = false;
@@ -46,10 +38,12 @@ document.getElementById("appointmentForm").addEventListener("submit", function (
         date.classList.remove("is-invalid");
     }
 
-    // If form is invalid, prevent submission
-    if (!isFormValid) {
-        event.preventDefault();
+    if (isFormValid) {
+        document.getElementById("appointmentForm").submit();
     }
 });
 
-
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}

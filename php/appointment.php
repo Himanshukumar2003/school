@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $headers .= "From: noreply@yourwebsite.com" . "\r\n"; 
 
         if (mail($to, $subject, $message, $headers)) {
-            echo "<script>alert('Thank you! Your appointment has been booked.'); window.location.href = 'index.html';</script>";
+            echo "<script>alert('Thank you! Your appointment has been booked.'); window.location.href = '/index.html';</script>";
         } else {
             echo "<p style='color:red;'>Failed to send email. Please try again later.</p>";
         }

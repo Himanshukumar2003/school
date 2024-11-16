@@ -25,9 +25,9 @@ if (isset($_POST['submit'])) {
     $headers .= "Content-type: text/html\r\n";
 
     if (mail($to, $subject, $message, $headers)) {
-        echo "<script>alert('Thank you for submitting the form.'); window.location.href='index.html';</script>";
+        echo "<script>alert('Thank you for submitting the form.'); window.location.href='/index.html';</script>";
     } else {
-        echo "<script>alert('Something went wrong. Please try again later.'); window.location.href='index.html';</script>";
+        echo "<script>alert('Something went wrong. Please try again later.'); window.location.href='/index.html';</script>";
     }
 }
 ?>

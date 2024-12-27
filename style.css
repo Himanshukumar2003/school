@@ -2212,3 +2212,24 @@ ul {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .navbar-nav {
+        gap: 10px !important;
+    }
+}
+
+
+@media (min-width: 991px) and (max-width: 1199px) {
+    .navbar-nav {
+
+        gap: 4px !important;
+
+    }
+
+    nav .btn {
+        display: none !important;
+    }
+}
